@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <> 
-        <Nav/>
+       <Nav/>
        <Header/>
        <About/>
        <Projects/>

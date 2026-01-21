@@ -5,7 +5,7 @@ export default function Projects(){
                return(
                        <>
                          <Nav/>
-                         <div className="w-full h-[80vh]"></div>
+                         <div className="w-full h-[80vh]">PROJECTS PAGE</div>
                          <Footer/>
                        </>
                )
