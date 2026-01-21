@@ -1,5 +1,5 @@
 import Home from "./pages/home"
-import Projects from "./pages/projects"
+import Portfolio from "./pages/portifolio"
 import Contact from "./pages/contact"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
@@ -10,7 +10,7 @@ function App() {
      <BrowserRouter>
         <Routes>
             <Route path="/" element={<Home/>}/>
-            <Route path="projects" element={<Projects/>}/>
+            <Route path="portfolio" element={<Portfolio/>}/>
             <Route path="contact" element={<Contact/>}/>
         </Routes>
     </BrowserRouter>

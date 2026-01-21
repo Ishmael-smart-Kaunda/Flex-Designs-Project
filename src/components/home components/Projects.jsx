@@ -14,7 +14,7 @@ export default function Projects(){
                                 <p>Modern Residential designs that blend vibrant colors 
                                    and spaces for lively home.
                                 </p> 
-                              <a href="/" className="flex flex-row gap-1 items-center font-light text-yellow-600">View all <FiArrowRight /></a>                                       
+                              <a href="/portfolio" className="flex flex-row gap-1 items-center font-light text-yellow-600">View all <FiArrowRight /></a>                                       
 
                             </article>
                             <article className="flex flex-col gap-2 justify-between bg-yellow-950/5 rinng-ston/10 shadow-sm shadow-stone-600 rounded-lg px-5 py-2 text-justify">
@@ -24,7 +24,7 @@ export default function Projects(){
                                     urban energy, perfect for business that thrive on 
                                     creativity. 
                                 </p> 
-                                <a href="/" className="flex flex-row gap-1 items-center font-light text-yellow-600">View all <FiArrowRight /></a>                                       
+                                <a href="/portfolio" className="flex flex-row gap-1 items-center font-light text-yellow-600">View all <FiArrowRight /></a>                                       
                                        
 
                             </article>
@@ -35,9 +35,17 @@ export default function Projects(){
                                     ideal for innovative business seeking characters and 
                                     functionality.
                                 </p> 
-                                 <a href="/" className="flex flex-row gap-1 items-center font-light text-yellow-600">View all <FiArrowRight /></a>                                       
-                                       
+                                 <a href="/portfolio" className="flex flex-row gap-1 items-center font-light text-yellow-600">View all <FiArrowRight /></a>                                       
+                            </article>
 
+                            <article className="flex flex-col gap-2 justify-between bg-yellow-950/5 rinng-ston/10 shadow-sm shadow-stone-600 rounded-lg px-5 py-2 text-justify">
+                                <h4 className="text-center font-medium ">Iterior designing</h4>
+                                <img src={commercial} className="w-full object-cover h-40 rounded-lg"/>
+                                <p>Reimaging industrial chic with bold colors and smart layouts, 
+                                    ideal for innovative business seeking characters and 
+                                    functionality.
+                                </p> 
+                                 <a href="/portfolio" className="flex flex-row gap-1 items-center font-light text-yellow-600">View all <FiArrowRight /></a>                                       
                             </article>
 
                           
