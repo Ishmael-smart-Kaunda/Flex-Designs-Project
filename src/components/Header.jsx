@@ -14,7 +14,7 @@ export default function Header({page}){
                                     :
                                     <div className="relative isolate bg-gradient-to-b from-gray-900/50 to-stone-950/40 top-0 left-0 w-full min-h-[90vh] md:min-h-[70vh] lg:min-h-[50vh]">
                                         <img className=" absolute inset-0 object-cover w-full h-full mix-blend-overlay" src={heroImg2}/>
-                                        <div className="relative top-1/2 translate-y-[50%] xlg:translate-y-[80%] m-auto flex flex-col gap-4 w-full">
+                                        <div className="relative top-1/2 translate-y-[90%] xlg:translate-y-[80%] m-auto flex flex-col gap-4 w-full">
                                             <h1 className="text-4xl md:text-6xl text-white text-center"> <b>SHAPING THE FUTURE OF INNOVATION IN </b><strong className="text-blue-400">EVERY DESIGN</strong> </h1>
                                             
                                         </div>
