@@ -7,7 +7,7 @@ import { FiArrowRight } from "react-icons/fi"
 export default function Commercial(){
            return(
                   <section className="max-w-6xl mx-5 md:mx-auto  text-center mb-10 bg-stone-800/10">
-                       
+                          <h4 className="text-2xl text-zinc-50 font-bold  pb-7">Commercial Properties</h4>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                             <article className="flex flex-col gap-2 justify-between bg-yellow-950/5 rinng-ston/10 shadow-sm shadow-stone-600 p-2 text-justify">
                               
