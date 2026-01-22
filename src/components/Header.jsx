@@ -8,7 +8,7 @@ export default function Header({page}){
                                         <img className=" absolute inset-0 object-cover w-full h-full mix-blend-overlay" src={heroImg1}/>
                                         <div className="relative top-1/2 translate-y-[50%] left-10 flex flex-col gap-4 w-1/2">
                                             <h1 className="text-4xl md:text-6xl text-white"> <b>SHAPING THE FUTURE OF INNOVATION IN </b><strong className="text-yellow-400">EVERY DESIGN</strong> </h1>
-                                            <a href="/portfolio" className=" p-2 w-[fit-content] bg-zinc-50 mt-5 rounded-xl">Explore designs</a>
+                                            <a href="../portfolio" className=" p-2 w-[fit-content] bg-zinc-50 mt-5 rounded-xl">Explore designs</a>
                                         </div>
                                     </div> 
                                     :

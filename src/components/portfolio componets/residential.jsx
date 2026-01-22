@@ -86,7 +86,7 @@ export default function Residential(){
                                        <p>Modern Residential designs that blend vibrant colors 
                                           and spaces for lively home.
                                        </p> 
-                                     <a href="/contact" className=" text-center bg-yellow-400/70 hover:bg-yellow-400/80 rounded-sm w-[fit-content]  p-2 px-15 self-center text-black font-bold">Reach Us</a>                                       
+                                     <a href="./contact" className=" text-center bg-yellow-400/70 hover:bg-yellow-400/80 rounded-sm w-[fit-content]  p-2 px-15 self-center text-black font-bold">Reach Us</a>                                       
        
                                    </article>
                                     <article className="flex flex-col gap-1 justify-between bg-blue-700/5 rinng-ston/10 shadow-sm shadow-stone-600 rounded-lg p-2 text-justify hover:scale-101 transtion-transform duration-300">
