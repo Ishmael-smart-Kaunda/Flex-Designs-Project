@@ -2,7 +2,7 @@ import { FiFacebook, FiTwitter, FiX, FiLinkedin, FiInstagram, FiMail, FiMapPin, 
 
 export default function Footer(){
                return(
-                       <footer className="flex flex-col w-full bg-zinc-950 px-10 md:px-25 py-5 text-zinc-400">
+                       <footer className="flex flex-col w-full bg-zinc-950 px-10 md:px-25 lg:px-5 py-5 text-zinc-400">
                          <span>  <h2 className=" text-zinc-300 font-bold">Flex Designs <strong className="text-yellow-500">MW</strong></h2> 
                              <p className="font-light text-sm">Spaces that blend lives and beauty</p>
                           </span>

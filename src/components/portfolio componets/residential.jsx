@@ -67,9 +67,9 @@ export default function Residential(){
                         })
 
     return(
-        <section className="max-w-6xl mx-5 md:mx-auto  bg-blue-950/0 rounded-lg text-center  pb-10 text-zinc-500">
+        <section className="max-w-6xl lg:max-w-7xl lg:px-5 mx-5 md:mx-auto  bg-blue-950/0 rounded-lg text-center  pb-10 text-zinc-500">
                                <h4 className="text-2xl text-zinc-50 font-bold  pb-7">Residential Houses</h4>
-                               <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+                               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                                    <article className="flex flex-col gap-1 justify-between bg-blue-950/5 rinng-ston/10 shadow-sm shadow-stone-600 rounded-lg p-2 text-justify hover:scale-101 transtion-transform duration-300">
                                       
                                        <img src={currentImg} alt="residential" className="w-full object-cover h-60 rounded-lg"/>
@@ -82,7 +82,7 @@ export default function Residential(){
                                          {pics}
                                        </div>
                                        
-                                       <h4 className="text-left font-medium text-zinc-200">TWO BEDROOM HOUSE</h4>
+                                       <h4 className="text-left font-medium text-zinc-200">THREE BEDROOM HOUSE</h4>
                                        <p>Modern Residential designs that blend vibrant colors 
                                           and spaces for lively home.
                                        </p> 
@@ -101,7 +101,7 @@ export default function Residential(){
                                          {fourbedHouseImgs}
                                        </div>
                                        
-                                       <h4 className="text-left font-medium text-zinc-200">TWO BEDROOM HOUSE</h4>
+                                       <h4 className="text-left font-medium text-zinc-200">FOUR BEDROOM HOUSE</h4>
                                        <p>Modern Residential designs that blend vibrant colors 
                                           and spaces for lively home.
                                        </p> 
@@ -141,7 +141,7 @@ export default function Residential(){
                                          {threebedHouseImgs}
                                        </div>
                                        
-                                       <h4 className="text-left font-medium text-zinc-200">TWO BEDROOM HOUSE</h4>
+                                       <h4 className="text-left font-medium text-zinc-200">THREE BEDROOM HOUSE</h4>
                                        <p>Modern Residential designs that blend vibrant colors 
                                           and spaces for lively home.
                                        </p> 

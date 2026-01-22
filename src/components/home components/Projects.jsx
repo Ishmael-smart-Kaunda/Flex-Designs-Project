@@ -5,7 +5,7 @@ import resi2 from "../../assets/images/resi31.jpg"
 import { FiArrowRight } from "react-icons/fi"
 export default function Projects(){
                 return(
-                       <section className="max-w-6xl mx-5 md:mx-auto  bg-blue-950/0 rounded-lg text-center  pb-10 text-zinc-500">
+                       <section className="max-w-6xl  lg:max-w-7xl lg:px-5 mx-5 md:mx-auto  bg-blue-950/0 rounded-lg text-center  pb-10 text-zinc-500">
                         <h4 className="text-2xl text-zinc-50 font-bold  pb-7">Projects</h4>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                             <article className="flex flex-col gap-2 justify-between bg-yellow-950/5 rinng-ston/10 shadow-sm shadow-stone-600 rounded-lg px-5 py-2 text-justify">
