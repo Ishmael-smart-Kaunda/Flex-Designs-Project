@@ -6,10 +6,10 @@ import { FaEye, FaBullseye } from "react-icons/fa"
 
 export default function About(){
         return(
-                <section className="text-center bg-blue-950/5 ring ring-stone-50/10 max-w-4xl mx-5 md:mx-auto my-10  rounded-lg pt-5 pb-20 px-5">
-                    <h4 className="text-2xl font-bold text-zinc-100 pb-7">About Us</h4>
+                <section className="text-center bg-zinc-500/10 ring ring-stone-700/40 max-w-4xl mx-5 md:mx-auto my-10  rounded-lg pt-5 pb-20 px-5">
+                    <h4 className="text-2xl font-bold text-zinc-800 pb-7">About Us</h4>
                     <div className="grid md:grid-cols-2 gap-3">
-                    <article className="flex flex-col gap-2 p-5 py-2 text-left ring ring-stone-50/5 rounded-lg text-zinc-200">
+                    <article className="flex flex-col gap-2 p-5 py-2 text-left ring ring-stone-500/20 rounded-lg text-zinc-800">
                         <h3 className="text-center font-bold ">Who are we?</h3>
                         <p className="font-normal">Flex Designs is an emerging architecture firm that creates purposeful, 
                             functional spaces guided by experience, clarity, and design excellence. 
@@ -18,7 +18,7 @@ export default function About(){
                         </p>
                     </article>
                     
-                    <div className=" text-left flex flex-col gap-3 bg-zinc-200/20 rounded-lg text-zinc-100 pt-5 pb-2 px-5">
+                    <div className=" text-left flex flex-col gap-3 bg-zinc-500/30 rounded-lg text-zinc-600 pt-5 pb-2 px-5">
                      <article className="flex flex-col gap-2 ">
                         <span  className="flex flex-col gap-1 w-full items-center font-medium"><FiEye/>Vision</span>
                         <p>To  lead in thoughtful architecture that balance innovation, functionality 

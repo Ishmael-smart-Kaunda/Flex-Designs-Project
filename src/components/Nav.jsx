@@ -10,7 +10,8 @@ export default function Nav(){
                {id: 1, pageName: "Home", linkTo: "/"},
                {id: 2, pageName: "Portfolio", linkTo: "/portfolio"},
                {id: 3, pageName: "About", linkTo: "/"},
-               {id: 4,pageName: "Contact", linkTo: "/contact"}
+               {id: 4,pageName: "Contact", linkTo: "/contact"},
+               {id: 5,pageName: "Team", linkTo: "/team"}
     ]
     const navLinks=Links.map(link=> <Link key={link.id} to={link.linkTo} className="hover:text-yellow-400">
                                         {link.pageName}

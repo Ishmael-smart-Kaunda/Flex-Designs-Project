@@ -1,52 +1,57 @@
 import { FiFacebook, FiTwitter, FiX, FiLinkedin, FiInstagram, FiMail, FiMapPin, FiPhone  } from "react-icons/fi";
+import footerImg from "../assets/images/hero.png"
 
 export default function Footer(){
                return(
-                       <footer className="flex flex-col w-full bg-zinc-950 px-10 md:px-25 lg:px-5 py-5 text-zinc-400">
-                         <span>  <h2 className=" text-zinc-300 font-bold">Flex Designs <strong className="text-yellow-500">MW</strong></h2> 
-                             <p className="font-light text-sm">Spaces that blend lives and beauty</p>
-                          </span>
-                        <div className="grid grid-cols-1 md:grid-cols-4 gap-5 w-full my-5">
-                          
-                          <article className="text-zinc-600 ">
-                            <h3 className="font-medium my-4 text-zinc-400">SOCIAL MEDIA</h3>
-                            <span className="flex flex-row items-center -ml-1 gap-3">
-                                <FiFacebook className="size-5 hover:scale-115"/>
-                                <FiTwitter className="size-5  hover:scale-115"/>
-                                <FiLinkedin className="size-5   hover:scale-115"/>
-                                <FiInstagram className="size-5   hover:scale-115"/>
-                            </span>
-                          </article>
 
-                          <article className="text-zinc-500">
-                            <h3 className="font-medium my-4 text-zinc-400">GO TO</h3>
+                        <footer className=" flex flex-col gap-2 w-full text-zinc-200 border-t border-stone-400 bg-zinc-50">
+                        { /*<span>  <h2 className=" text-zinc-300 font-bold">Flex Designs <strong className="text-yellow-500">MW</strong></h2> 
+                             <p className="font-light text-sm">Spaces that blend lives and beauty</p>
+                          </span> */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 md:px-10 gap-2 w-full my-10">
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 mx-5 p-3  bg-stone-100 rounded-lg text-slate-800">
+                          <article className=" ">
                             <ul className="flex flex-col items-start gap-3">
-                                <li className="font-normal ">Home</li>
-                                <li className="font-normal ">Projects</li>
-                                <li className="font-normal ">Contact</li>
+                                <li> <a href="/" className="font-normal hover:text-red-950 ">Home</a></li>
+                                <li> <a href="/" className="font-normal hover:text-red-950 ">Services</a></li>
+                                <li> <a href="/" className="font-normal hover:text-red-950 ">Team</a></li>
+                                <li> <a href="/" className="font-normal hover:text-red-950 ">Contact</a></li>
                             </ul>
                           </article>
-                          <article className="text-zinc-400">
-                            <h3 className="font-medium my-4">CONTACT</h3>
+                          <article className="text-slate-800">
+                            <h3 className="font-medium my-4">GET IN TOUCH</h3>
                             <address className="flex flex-col items-start gap-3">
-                                  <span className="flex flex-row items-center gap-2  font-normal "><FiMapPin className="size-5 text-yellow-500/20"/>  <p className="font-normal text-sm text-zinc-500"> Lilongwe</p></span>
-                                  <span className="flex flex-row items-center gap-2 font-normsl "> 
-                                    <FiPhone className="size-5 text-yellow-500/20"/> 
-                                    <a href="tel: +265881550810" className="font-light text-sm text-zinc-500"> +265 881550810</a>
+                                  <span className="flex flex-row items-center gap-2  font-normal ">
+                                    <FiMapPin className="size-5  text-slate-950 "/>
+                                    <p className="font-semibold text-sm text-zinc-500 not-italic "> Box 345, Lilongwe</p>
                                   </span>
-                                  <span  className="flex flex-row  flex-wrap items-center gap-2 font-normal text-zinc-400"> 
-                                    <FiMail className="size-5 text-yellow-500/20"/> 
-                                    <a href="mailto:digitalartsacademymw.register@gmail.com " className="font-light text-zinc-500">flexdesigns@gmail.com</a> 
+                                  <span className="flex flex-row items-center gap-2 font-normal "> 
+                                    <FiPhone className="size-5  text-slate-950"/> 
+                                    <a href="tel: +265881550810" className="font-semibold text-sm text-zinc-500 not-italic"> +265 88 155 0810</a>
+                                  </span>
+                                  <span  className="flex flex-row  flex-wrap items-center gap-2 font-normal "> 
+                                    <FiMail className="size-5  text-slate-950 "/> 
+                                    <a href="mailto:digitalartsacademymw.register@gmail.com " className="font-semibold text-zinc-500 not-italic">flexdesigns@gmail.com</a> 
                                   </span>
                             </address>
                           </article>
-                          <article className=" border border-white bg-gray-900/20">
-                            <h3 className="font-medium">MAP</h3>
-                            
-                          </article>
+                          </div>
 
+                           <article className="mx-5 text-zinc-600 grid grid-cols-2 gap-2 items-center gap-3">
+                                <FiFacebook className="bg-stone-100 text-slate-950/80 p-4 rounded-sm w-full h-20 hover:scale-102 transition-all duration-500"/>
+                                <FiTwitter className="bg-stone-100 text-slate-950/80 p-4 rounded-sm w-full h-20 hover:scale-102 transition-all duration-500"/>
+                                <FiLinkedin className="bg-stone-100 text-slate-950/80 p-4 rounded-sm w-full h-20 hover:scale-102 transition-all duration-500"/>
+                                <FiInstagram className="bg-stone-100 text-slate-950/80 p-4 rounded-sm w-full h-20 hover:scale-102 transition-all duration-500"/>
+                          </article>
                         </div>
-                         <p className="text-center mt-auto text-zinc-600 text-sm text-light"> © <span>2026</span> Flex Designs : All rights reserved.</p>
+
+                          
+
+                         <p className="w-full bg-slate-950 p-2  text-center text-zinc-600 text-sm text-light"> © <span>2026</span> Flex Designs : All rights reserved.</p>
+                        
                        </footer>
+                      
+
                )
 }

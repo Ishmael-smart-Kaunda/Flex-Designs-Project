@@ -1,13 +1,12 @@
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import ContactDetails from "../components/contact components/contact";
+import TeamTeed from "../components/team component/Team";
 
-export default function Contact(){
-
+export default function Team(){
     return(
-          <>
+           <>
             <Nav/>
-            <ContactDetails/>
+            <TeamTeed/>
             <Footer/>
            </>
     )
