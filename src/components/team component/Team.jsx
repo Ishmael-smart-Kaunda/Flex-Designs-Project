@@ -10,7 +10,7 @@ export default function TeamTeeds(){
                     return(<Member key={member.id} data={member}/>)
                     })
     return (
-             <section className="px-10 md:px-0 md:max-w-4xl mx-auto md:my-15 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 md:gap-2">
+             <section className="px-10 md:px-0 md:max-w-4xl mx-auto md:my-15 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 md:gap-0">
                 {members}
              </section>
     )

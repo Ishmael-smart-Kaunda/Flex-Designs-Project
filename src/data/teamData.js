@@ -1,6 +1,8 @@
 
 import felix from "../assets/images/team/felix-nyirenda.jpg"
+import ray from "../assets/images/team/ray.jpg"
 import ishmael from "../assets/images/team/ishmael-smart.jpg"
+
 import { FiFacebook, FiTwitter, FiLinkedin, FiInstagram } from "react-icons/fi"
 
 export default [
@@ -42,9 +44,9 @@ export default [
                 },
                  {
                     id:2,
-                    Img:felix,
-                    name:"felix Nyirenda",
-                    role:"Managing Director",
+                    Img:ray,
+                    name:"Ray Jay",
+                    role:"Web Developer",
                     facebook: {
                              link:'to facebook',
                             },
@@ -60,6 +62,24 @@ export default [
                 },
                 {
                     id:3,
+                    Img:felix,
+                    name:"Felix Nyirenda",
+                    role:"Managing Director",
+                    facebook: {
+                             link:'to facebook',
+                            },
+                    instagram: {
+                             link:'to facebook',
+                            },
+                    linkedin: {
+                             link:'to facebook',
+                            },
+                    tiktok: {
+                             link:'to facebook',
+                            },
+                },
+                 {
+                    id:4,
                     Img:ishmael,
                     name:"Ishmael Smart",
                     role:"Web Developer",
@@ -76,28 +96,10 @@ export default [
                              link:'to facebook',
                             },
                 },
-                 {
-                    id:4,
-                    Img:felix,
-                    name:"felix Nyirenda",
-                    role:"Managing Director",
-                    facebook: {
-                             link:'to facebook',
-                            },
-                    instagram: {
-                             link:'to facebook',
-                            },
-                    linkedin: {
-                             link:'to facebook',
-                            },
-                    tiktok: {
-                             link:'to facebook',
-                            },
-                },
                 {
                     id:5,
-                    Img:ishmael,
-                    name:"Ishmael Smart",
+                    Img:ray,
+                    name:"Ray Jay",
                     role:"Web Developer",
                     facebook: {
                              link:'to facebook',
@@ -115,7 +117,7 @@ export default [
                  {
                     id:6,
                     Img:felix,
-                    name:"felix Nyirenda",
+                    name:"Felix Nyirenda",
                     role:"Managing Director",
                     facebook: {
                              link:'to facebook',

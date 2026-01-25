@@ -13,9 +13,11 @@ export default function Home() {
 
   return (
     <> 
-       <Navbar/>
+       {/** Nav */}
+       <Nav/>
        <Hero/>
        <Description/>
+
        <Projects/>
        <Footer/>
        
