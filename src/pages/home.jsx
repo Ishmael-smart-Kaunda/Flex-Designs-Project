@@ -1,7 +1,8 @@
 
-import Nav from "../components/Nav"
-import Navbar from "../components/Navbar"
+
+import Navbar from "../components/home components/Navbar"
 import Hero from "../components/Hero"
+import CTA from "../components/home components/CTA"
 import Header from "../components/Header"
 import About from "../components/home components/About"
 
@@ -14,10 +15,10 @@ export default function Home() {
   return (
     <> 
        {/** Nav */}
-       <Nav/>
+       <Navbar/>
        <Hero/>
        <Description/>
-
+       <CTA/>
        <Projects/>
        <Footer/>
        

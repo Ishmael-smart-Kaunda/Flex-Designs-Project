@@ -31,9 +31,9 @@ export default function Form(){
                     
                 >
                 </textarea>
-                <div className="md:col-span-2 flex gap-4">
-                    <button className="w-full px-4 py-3 bg-red-950 text-white font-semibold rounded-md hover:bg-red-900">Send</button>
-            </div>
+            
+                    <button className="w-full px-4 py-3 bg-blue-950 border-none text-white font-semibold rounded-md hover:bg-blue-950/95">Send</button>
+            
         </form>
        )
 }

@@ -12,45 +12,45 @@ export default[
                 id:1,
                 Img:valuation,
                 title:'property valuation',
-                description:`Whether you want to access credit, 
-                       acquire a property or produce financial reports, 
-                       let our team run the hyke.`
+                description:`Market aligned property valuations prepared in accordance with 
+                             recognised professional standards, supporting sales, lending, and investiment
+                             decisions.`
             },
             {    
                 id:2,
                 Img:management,
                 title:'property management',
-                description:`Our property management team cover tenant 
-                             relations, financial and ongoing asset performance monitoring.`
+                description:`Strategic property management focussed on operational efficiency, regulatory
+                             compliance, and sustained asset value.`
             },
              {
 
                 id:3,
                 Img:development,
                 title:'property development',
-                description:` We financial, regulatory, and 
-                            construction considerations to transform land.`
+                description:` We provide proffessional developments aligned with planning regulations, technical standards
+                              and market realities to create enduring property value.`
             },
             {   
                 id:4,
                 Img:appraisal,
                 title:'property appraisal',
-                description:` We support you make informed investment decisions by 
-                              analyzing income potential scenarios.`
+                description:`Indipendent investiment appraisals grounded in market analysis, financial modelling, and professional
+                             standards to support informed real estate decisions.`
             },
             {    
                 id:5,
                 Img:titleDeed,
                 title:'deed processing',
-                description:` Our dedicated surveyors ensures that your property 
-                            transactions and legally enforceable.`
+                description:`Comprehensive property transfers that ensure accurate documantation,regulatory compliance
+                             , and secure ownership transitions for all property types.`
             },
             {   
                 id:6,
                 Img:designing,
                 title:'architectual designing',
-                description:` Our dedicated surveyors ensures that your property 
-                            transactions and legally enforceable.`
+                description:`We create smart and functional property designs tailored to your needs, ensuring
+                             techinically practical, regulatory compliant, and ready for development.`
             },
 
 ]

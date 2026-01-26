@@ -10,8 +10,21 @@ export default function TeamTeeds(){
                     return(<Member key={member.id} data={member}/>)
                     })
     return (
-             <section className="px-10 md:px-0 md:max-w-4xl mx-auto md:my-15 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 md:gap-0">
-                {members}
+             <section className="max-w-6xl m-auto bg-zinc-100 mt-20">
+                <h1 className="text-4xl font-bold text-center text-slate-950">Our Team</h1>
+                <div className="w-full md:w-3/4 m-auto  text-center text-xl font-normal my-10">
+                
+                    <p className="w-full ">
+                      Our firm is supported by a team of qualified real estate professionals with experience 
+                      ranging from property valuation, through real estate investment advisory to property development.
+                    </p>
+                </div>
+               
+                <div 
+                className="grid grid-cols-1 md:grid-cols-3 gap-2 w-full m-auto">
+                     {members}
+                </div>
+               
              </section>
     )
 }
