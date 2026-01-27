@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { AiOutlineMenu, AiOutlineClose, AiOutlineHome, AiTwotoneBuild, AiOutlineCodeSandbox, AiOutlineSearch} from 'react-icons/ai'
 import { BiNews } from 'react-icons/bi'
 import { FaBlogger, FaBalanceScaleRight } from 'react-icons/fa'
-import { RiContactsFill, RiExchangeDollarLine, RiArrowDropDownLine, RiTeamFill } from 'react-icons/ri'
+import { RiContactsFill, RiExchangeDollarLine, RiArrowDropDownLine, RiTeamFill, RiMoneyDollarCircleLine } from 'react-icons/ri'
+import { FiTrendingUp } from 'react-icons/fi'
 import { FcProcess } from 'react-icons/fc'
 
 const Navbar = () => {
@@ -47,7 +49,7 @@ const Navbar = () => {
                     </p>
                     <div className='
                         absolute left-0 top-full mt-3
-                        w-[250px] h-[350px]
+                        w-[250px] h-[420px]
                         rounded-lg p-4
                         bg-white/95
                         shadow-2xl
@@ -58,51 +60,62 @@ const Navbar = () => {
                         group-hover:opacity-100
                         group-hover:visible
                         group-hover:translate-y-0
+                        text-gray-600 
                     '>
                         <ul>
-                            <li className='text-xl py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
+                            <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
                                 <FaBalanceScaleRight
                                     size={25}
                                     className='mr-4 '
                                 />
                                 Property Valuation
                             </li>
-                            <li className='text-xl py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
+                            <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
                                 <AiTwotoneBuild 
                                     size={25}
                                     className='mr-4'
                                 />
                                 Property Development
                             </li>
-                            <li className='text-xl py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
+                            <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
                                 <FcProcess
                                     size={25}
                                     className='mr-4'
                                 />
                                 Deed Processing
                             </li>
-                            <li className='text-xl py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
+                            <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
                                 <AiOutlineCodeSandbox 
                                     size={25}
                                     className='mr-4'
                                 />
                                 Building Design
                             </li>
-                            <li className='text-xl py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
+                            <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
                                 <RiExchangeDollarLine
                                     size={25}
                                     className='mr-4'
                                 />
                                 Auctioning
                             </li>
+                             <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
+                                <FiTrendingUp
+                                    size={25}
+                                    className='mr-4'
+                                />
+                                Investiment Appraisal
+                            </li>
                         </ul>
                     </div>
                 </div>
                 
-                <p className='font-medium hover:bg-gray-200 px-4 py-2 rounded-full hover:text-red-900 transtion-all duration-300'>Team</p>
+                <p className='font-medium hover:bg-gray-200 px-4 py-2 rounded-full hover:text-red-900 transtion-all duration-300'>
+                     <Link to='/team' >Team</Link>
+                </p>
                 <button className='bg-blue-950 cursor-pointer text-white py-2 flex items-center rounded-full hover:opacity-90 transtion-all duration-300'>
                     <BiNews className='mr-2' size={20}  />
-                    Get Started
+                    
+                     <Link to='/contact' >Get Started</Link>
                 </button>
             </div>
 
@@ -128,7 +141,7 @@ const Navbar = () => {
                     Flex <span className='font-bold'>Consultancy</span>
                 </h2>
                 <nav>
-                    <ul className='flex flex-col p-4 text-gray-800'>
+                    <ul className='flex flex-col p-4 text-gray-600'>
                         <li className='text-xl py-4 flex hover:text-red-900 transtion-all duration-300'>
                             <AiOutlineHome
                                 size={25}
@@ -141,14 +154,14 @@ const Navbar = () => {
                                 size={25}
                                 className='mr-4'
                             />
-                            Team
+                          <Link to='/team' >Team</Link>
                         </li>
                         <li className='text-xl py-4 flex hover:text-red-900 transtion-all duration-300'>
                             <RiContactsFill 
                                 size={25}
                                 className='mr-4'
                             />
-                            Contact
+                           <Link to='/contact'>Contact</Link> 
                         </li>
                         <li className='text-xl py-4 flex hover:text-red-900 transtion-all duration-300'>
                             <FaBalanceScaleRight
@@ -184,6 +197,13 @@ const Navbar = () => {
                                 className='mr-4'
                             />
                             Auctioning
+                        </li>
+                         <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
+                                <FiTrendingUp
+                                    size={25}
+                                    className='mr-4'
+                                />
+                                Investiment Appraisal
                         </li>
                     </ul>
                 </nav>

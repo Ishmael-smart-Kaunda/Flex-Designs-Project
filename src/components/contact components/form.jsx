@@ -9,30 +9,42 @@ export default function Form(){
                     type="text"
                     name="user_name" 
                     placeholder="Full name" 
-                    className="w-full p-3 border border-zinc-300 bg-zinc-200 rounded-md rounded-md placeholder: text-placeholder  focus:outline-none "
+                    className="w-full p-3 text-gray-600/90 border border-zinc-300 bg-zinc-200 rounded-md rounded-md placeholder: text-placeholder  focus:outline-none "
                     required
                 />
                 <input 
                     type="email"
                     name="email" 
                     placeholder="Email address" 
-                    className="w-full p-3 border border-zinc-300 bg-zinc-200 rounded-md placeholder: text-placeholder bg-bgSecondary focus:outline-none "
+                    className="w-full p-3 text-gray-600/90 border border-zinc-300 bg-zinc-200 rounded-md focus:outline-none "
                 />
                 <input 
                     type="tel"
                     name="phone" 
                     placeholder="Phone" 
-                    className="w-full p-3 border border-zinc-300 bg-zinc-200 rounded-md placeholder: text-placeholder bg-bgSecondary focus:outline-none"
+                    className="w-full p-3 text-gray-600/90 border border-zinc-300 bg-zinc-200 rounded-md focus:outline-none"
                 />
+                <select 
+                name="interest" 
+                className="p-3 border border-zinc-300 rounded-md text-gray-600/90 text-[13px] border-zinc-300 bg-zinc-200  rounded-md focus:outline-none"
+                required
+            >
+                <option value="">Your property your way! pick the service you need.</option>
+                <option>Property Valuation</option>
+                <option>Property Management</option>
+                <option>Deed Processing</option>
+                <option>Building Designs</option>
+                <option>Investiment Advisory</option>
+            </select>
                 <textarea 
                     name="message" 
                     placeholder="Message" 
-                    className="w-full md:col-span-2 p-3 border border-zinc-300 bg-zinc-200 rounded-md placeholder: text-placeholder bg-bgSecondary focus:outline-none"
+                    className="w-full p-3 text-gray-600/90 border border-zinc-300 bg-zinc-200 rounded-md focus:outline-none"
                     
                 >
                 </textarea>
             
-                    <button className="w-full px-4 py-3 bg-blue-950 border-none text-white font-semibold rounded-md hover:bg-blue-950/95">Send</button>
+                <button className="w-full px-4 py-3 bg-blue-950 border-none text-white font-semibold rounded-md hover:bg-blue-950/95">Send</button>
             
         </form>
        )

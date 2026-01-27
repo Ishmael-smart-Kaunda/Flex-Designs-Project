@@ -34,7 +34,7 @@ export default[
             {   
                 id:4,
                 Img:appraisal,
-                title:'property appraisal',
+                title:'investiment appraisal',
                 description:`Indipendent investiment appraisals grounded in market analysis, financial modelling, and professional
                              standards to support informed real estate decisions.`
             },
