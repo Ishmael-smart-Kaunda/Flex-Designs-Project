@@ -9,7 +9,7 @@ export default function Service({data}){
                         <p className="text-gray-500 text-[16px] leading-relaxed">
                             {data.description}
                         </p> 
-                        <a href="/portfolio" className="w-fit flex flex-row gap-1 items-center font-semibold text-sm text-blue-950 hover:text-red-900 transtion-all duration-300">View all <FiArrowRight /></a>                                       
+                        <a href="/services" className="w-fit flex flex-row gap-1 items-center font-semibold text-sm text-blue-950 hover:text-red-900 transtion-all duration-300">View all <FiArrowRight /></a>                                       
                         
                     </div> 
                 </article> 

@@ -5,7 +5,12 @@ import { FiMapPin, FiMail, FiInbox, FiPhone } from "react-icons/fi"
 
 export default function ContactDetails(){
          return(
-                <section className="w-[95%] md:max-w-6xl mx-auto grid grid-cols-1 rounded-lg md:grid-cols-2 my-20 ">
+                <section className="max-w-[1500px] m-auto p-7 mt-12  lg:mt-25 ">
+                     <p className="text-2xl text-center text-gray-600 py-10">
+                        We are ready to offer clear guidance and professional support.
+                     </p>
+
+                     <div className="w-[95%] md:max-w-6xl mx-auto grid grid-cols-1 rounded-lg md:grid-cols-2">
                     <article className="flex flex-col gap-10 justify-between py-10 px-5 rounded-l-sm bg-zinc-100">
                         <span>
                             
@@ -35,7 +40,7 @@ export default function ContactDetails(){
                        
                     </article>
                     <Form/>
-                 
+                    </div>
                 </section>
          )
 }

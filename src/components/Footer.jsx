@@ -25,7 +25,7 @@ export default function Footer(){
                             <address className="flex flex-col items-start gap-3">
                                   <span className="flex flex-row items-center gap-2  font-normal ">
                                     <FiMapPin className="size-4  text-gray-500 "/>
-                                    <p className="font-semibold text-sm text-zinc-500 not-italic "> Box 345, Lilongwe</p>
+                                    <p className="font-semibold text-sm text-zinc-500 not-italic "> Kang'ombe House</p>
                                   </span>
                                   <span className="group flex flex-row items-center gap-2 font-normal "> 
                                     <FiPhone className="size-4  text-gray-500 group-hover:text-red-900/70 transition-all duration-500"/> 

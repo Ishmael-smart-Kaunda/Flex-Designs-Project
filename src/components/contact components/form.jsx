@@ -30,11 +30,11 @@ export default function Form(){
                 required
             >
                 <option value="">Your property your way! pick the service you need.</option>
-                <option>Property Valuation</option>
+                <option className="bg-red hover:bg-red-800">Property Valuation</option>
                 <option>Property Management</option>
                 <option>Deed Processing</option>
                 <option>Building Designs</option>
-                <option>Investiment Advisory</option>
+                <option>Investiment Advisory/Appraisal</option>
             </select>
                 <textarea 
                     name="message" 
