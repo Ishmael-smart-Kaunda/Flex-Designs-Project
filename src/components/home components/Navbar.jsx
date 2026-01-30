@@ -180,6 +180,13 @@ const Navbar = () => {
                             />
                             Property Valuation
                         </li>
+                        <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
+                                <AiOutlineHome
+                                    size={25}
+                                    className='mr-4'
+                                />
+                                <Link to="/services">Property Management</Link>
+                            </li>
                         <li className='text-xl py-4 flex hover:text-red-900 transtion-all duration-300'>
                             <AiTwotoneBuild 
                                 size={25}
@@ -213,7 +220,7 @@ const Navbar = () => {
                                     size={25}
                                     className='mr-4'
                                 />
-                                Investiment Appraisal
+                         Investiment Appraisal
                         </li>
                     </ul>
                 </nav>
