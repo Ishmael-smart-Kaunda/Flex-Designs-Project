@@ -1,6 +1,6 @@
 const CTA = () => {
   return (
-    <div className='w-full m-auto pb-0'>
+    <div className='max-w-[1500px] m-auto pb-0'>
         <div className='w-full md:w-[70%] m-auto mb-15 bg-[#FAF8F8] bckdrop-blur-md shadow-lg border-[1px] border-blue-950/20 rounded-xl text-gray-700 p-6 text-[16px] md:text-[18px]'>
             <p>
                 <span className='font-bold text-red-900'>Do you credit facility, insure your property or produce financial report? </span> 
