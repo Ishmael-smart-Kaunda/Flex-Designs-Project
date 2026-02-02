@@ -2,6 +2,8 @@ import appraisalData from "../../data/appraisalData"
 import Services from "./services"
 import CTA from "./CTA"
 
+import DevelopmentProcess from "./development"
+
 export default function InvestimentAppraisal(){
                   return(
                          <section className="max-w-[1500px] m-auto p-7">
@@ -11,6 +13,7 @@ export default function InvestimentAppraisal(){
                                     {/* services from data js */}   
                                     {appraisalData.map(data=><Services key={data.id} data={data}/>)} 
                                 </div>
+                                
                                 <CTA/>
                         </section>
                    )

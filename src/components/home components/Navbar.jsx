@@ -71,49 +71,49 @@ const Navbar = () => {
                                     className='mr-4 '
                                 />
 
-                                <Link to="/services">Property Valuation</Link>
+                                <Link to="/valuation">Property Valuation</Link>
                             </li>
                             <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
                                 <AiOutlineHome
                                     size={25}
                                     className='mr-4'
                                 />
-                                <Link to="/services">Property Management</Link>
+                                <Link to="/management">Property Management</Link>
                             </li>
                             <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
                                 <AiTwotoneBuild 
                                     size={25}
                                     className='mr-4'
                                 />
-                                <Link to="/services">Property Development</Link>
+                                <Link to="/development">Property Development</Link>
                             </li>
                             <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
                                 <FcProcess
                                     size={25}
                                     className='mr-4'
                                 />
-                               <Link to="/services"> Deed Processing</Link>
+                               <Link to="/deedprocessing"> Deed Processing</Link>
                             </li>
                             <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
                                 <AiOutlineCodeSandbox 
                                     size={25}
                                     className='mr-4'
                                 />
-                                <Link to="/services">Building Design</Link>
+                                <Link to="/designing">Building Design</Link>
                             </li>
                             <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
                                 <RiExchangeDollarLine
                                     size={25}
                                     className='mr-4'
                                 />
-                                <Link to="/services">Auctioning</Link>
+                                <Link to="/auctioning">Auctioning</Link>
                             </li>
                              <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
                                 <FiTrendingUp
                                     size={25}
                                     className='mr-4'
                                 />
-                                <Link to="/services">Investiment Appraisal</Link>
+                                <Link to="/appraisal">Investiment Appraisal</Link>
                             </li>
                         </ul>
                     </div>
@@ -157,7 +157,7 @@ const Navbar = () => {
                                 size={25}
                                 className='mr-4'
                             />
-                            Home
+                            <Link to="/">Home</Link>
                         </li>
                         <li className='text-xl py-4 flex hover:text-red-900 transtion-all duration-300'>
                             <RiTeamFill 
@@ -178,49 +178,49 @@ const Navbar = () => {
                                 size={25}
                                 className='mr-4'
                             />
-                            Property Valuation
+                            <Link to="/valuation">Property Valuation</Link>
                         </li>
                         <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
                                 <AiOutlineHome
                                     size={25}
                                     className='mr-4'
                                 />
-                                <Link to="/services">Property Management</Link>
+                                <Link to="/management">Property Management</Link>
                             </li>
                         <li className='text-xl py-4 flex hover:text-red-900 transtion-all duration-300'>
                             <AiTwotoneBuild 
                                 size={25}
                                 className='mr-4'
                             />
-                            Property Development
+                             <Link to="/development">Property Development</Link>
                         </li>
                         <li className='text-xl py-4 flex hover:text-red-900 transtion-all duration-300'>
                             <FcProcess
                                 size={25}
                                 className='mr-4'
                             />
-                            Deed Processing
+                             <Link to="/deedprocessing">Deed Processing</Link>
                         </li>
                         <li className='text-xl py-4 flex hover:text-red-900 transtion-all duration-300'>
                             <AiOutlineCodeSandbox 
                                 size={25}
                                 className='mr-4'
                             />
-                            Building Design
+                            <Link to="/designing">Building Design</Link>
                         </li>
                         <li className='text-xl py-4 flex hover:text-red-900 transtion-all duration-300'>
                             <RiExchangeDollarLine
                                 size={25}
                                 className='mr-4'
                             />
-                            Auctioning
+                            <Link to="/auctioning">Auctioning</Link>
                         </li>
                          <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
                                 <FiTrendingUp
                                     size={25}
                                     className='mr-4'
                                 />
-                         Investiment Appraisal
+                         <Link to="/appraisal">Investiment Appraisal</Link>
                         </li>
                     </ul>
                 </nav>
