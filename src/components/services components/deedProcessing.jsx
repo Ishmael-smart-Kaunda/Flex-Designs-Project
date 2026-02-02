@@ -12,7 +12,7 @@ export default function DeedProcessing(){
                                 </p>
 
                                 <div className=" w-full mb-10 grid grid-cols-1 md:grid-cols-3 gap-10">
-                                    <article className="col-start-2 row-start-2">
+                                    <article className="md:col-start-2 md:row-start-2">
                                         <Video/>
                                     </article>
                                     {/* services from data js */}   

@@ -13,7 +13,7 @@ export default function Valuation(){
                 <section className="max-w-[1500px] m-auto p-7 mt-15 md:mt-20">
                    <h1 className="text-3xl text-blue-950 text-center font-bold my-7">Property Valuation</h1>
                    <div className=" grid grid-cols-1 md:grid-cols-4 md:grid-rows-4 gap-6">
-                    <article className="col-span-2 row-span-2">
+                    <article className="md:col-span-2 md:row-span-2">
                        <Video/>
                     </article>
                     <article className="col-span-1 size-full text-gray-500">
