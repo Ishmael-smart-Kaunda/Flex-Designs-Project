@@ -1,5 +1,6 @@
 import React from 'react'
 import { BsArrowRight } from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
@@ -57,11 +58,12 @@ const Hero = () => {
                 <p className="mt-1">
                     From valuation and design to development and asset management.
                 </p>
-
-                <button className="mt-4 flex items-center gap-2 rounded-full bg-blue-950 px-4 py-2 text-white">
-                    Get Started
+                 <Link to="/contact">
+                <button className="w-fit mt-4 flex items-center gap-2 rounded-full bg-blue-950 px-4 py-2 text-white">
+                     Get Started
                     <BsArrowRight />
                 </button>
+                </Link>
                 </div>
             </div>
 

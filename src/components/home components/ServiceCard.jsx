@@ -1,6 +1,6 @@
 import { FiArrowRight } from "react-icons/fi"
 
-export default function Service({data}){
+export default function Service({data, page}){
          return(
                 <article className="overflow-hidden flex flex-col h-110 md:h-100 xlg-h-90 justify-between rounded-sm shadow-sm shadow-zinc/200 text-justify hover:shadow-zinc-400 transition-all duration-500">
                     <img src={data.Img} className=" object-cover w-full opacity-90 group-hover:opacity-100 h-1/2"/>

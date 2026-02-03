@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 
 const CTA = () => {
   return (
@@ -15,9 +17,11 @@ const CTA = () => {
                 From valuation and development to legal considerations and final decision-making, we 
                 support you at every stage to ensure clarity, confidence, and satisfaction.
             </p>
-            <button className='block mt-10 font-bold m-auto cursor-pointer border-slate-950/20 text-blue-950'>
-                Let Our Team Guide You
-            </button>
+            <Link to='/contact'>
+                <button className='block mt-10 font-bold m-auto cursor-pointer border-slate-950/20 text-blue-950'>
+                    Let Our Team Guide You
+                </button>
+            </Link>
         </div>
 
        
