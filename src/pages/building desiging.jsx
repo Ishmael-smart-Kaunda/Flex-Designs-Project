@@ -1,13 +1,17 @@
-import Navbar from "../components/home components/Navbar"
-import Footer from "../components/Footer"
 
+import Navbar from "../components/home components/Navbar"
+import Hero from "../components/services components/hero"
+import BuildingDesigns from "../components/services components/building designing"
+import Footer from "../components/Footer"
+import building from "../assets/images/Designs/archt.png"
 import CTA from "../components/home components/CTA"
 
 export default function DesigningPage(){
                 return (
                         <>
                          <Navbar/>
-                          <h1 className="text-6xl text-center py-80 w-full">BUILDING DESINGING PAGE</h1>
+                         <Hero title="building designing"/>
+                         <BuildingDesigns/>
                          <Footer/>
                         </>
                 )

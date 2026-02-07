@@ -11,13 +11,17 @@ import DesigningPage from "./pages/building desiging"
 import AuctioningPage from "./pages/auctioning"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
+import { AnimatePresence } from "framer-motion"
+import { useLocation } from "react-router-dom"
+
 
 function App() {
 
   return (
     <> 
      <BrowserRouter>
-        <Routes>
+      <AnimatePresence>
+        <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home/>}/>
             <Route path="portfolio" element={<Portfolio/>}/>
             <Route path="contact" element={<Contact/>}/>
@@ -31,6 +35,7 @@ function App() {
             <Route path="team" element={<Team/>}/>
 
         </Routes>
+        </AnimatePresence>
     </BrowserRouter>
     </>
   )

@@ -1,17 +1,22 @@
 
-import { useState, useRef } from "react"
+
 import plantValuation from "../../assets/images/valuation/plant valuation.jpg"
 import insuranceValuation from "../../assets/images/valuation/insurance valuation.jpg"
 import Video from "./video"
 import CTA from "./CTA"
-
+import { motion } from "framer-motion"
 export default function Valuation(){
         
 
         return(
                
-                <section className="max-w-[1500px] m-auto p-7 mt-15 md:mt-20">
-                   <h1 className="text-3xl text-blue-950 text-center font-bold my-7">Property Valuation</h1>
+                <motion.section 
+                  initial={{x:'50%'}}
+                  animate={{x:0}}
+                  transition={{duration:1}}
+                
+                  className="max-w-[1500px] m-auto p-7 mt-7">
+                   
                    <div className=" grid grid-cols-1 md:grid-cols-4 md:grid-rows-4 gap-6">
                     <article className="md:col-span-2 md:row-span-2">
                        <Video/>
@@ -78,7 +83,7 @@ export default function Valuation(){
                    </div>
 
 
-                </section>
+                </motion.section>
 
                    
         )

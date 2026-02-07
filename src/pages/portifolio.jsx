@@ -10,7 +10,6 @@ export default function Portfolio(){
                return(
                        <>
                          <Navbar/>
-                         
                          <Residential/>
                          <Commercial/>
                          <Industrial/>

@@ -5,7 +5,7 @@ import Hero from "../components/Hero"
 import CTA from "../components/home components/CTA"
 
 import Description from "../components/home components/Description"
-import Projects from "../components/home components/Projects"
+import Services from "../components/home components/services"
 import Footer from "../components/Footer"
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
        <Hero/>
        <Description/>
        <CTA/>
-       <Projects/>
+       <Services/>
        <Footer/>
        
     </>
