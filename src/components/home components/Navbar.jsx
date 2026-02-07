@@ -6,6 +6,7 @@ import { FaBlogger, FaBalanceScaleRight } from 'react-icons/fa'
 import { RiContactsFill, RiExchangeDollarLine, RiArrowDropDownLine, RiTeamFill, RiMoneyDollarCircleLine } from 'react-icons/ri'
 import { FiTrendingUp, FiHome } from 'react-icons/fi'
 import { FcProcess } from 'react-icons/fc'
+import Searchbar from './Searchbar'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
@@ -30,16 +31,9 @@ const Navbar = () => {
             </div>
 
             {/* Search Inputs */}
-            <div className='hidden sm:flex items-center bg-gray-200 rounded-full px-2 w-[300px] lg:w-[400px]'>
-                <AiOutlineSearch size={25} />
-                <input
-                    className='bg-transparent p-2 w-full focus:outline-none' 
-                    type='text' 
-                    placeholder='Search services' 
-                />
-            </div>
+            <Searchbar />
 
-            {/* Newsletters */}
+            {/* Services */}
             <div className='hidden lg:flex items-center gap-8 cursor-pointer'>
                 <div className='group relative'>
                     <p className='font-medium group-hover:bg-gray-200 px-4 py-2 rounded-full flex items-center gap-1.5 hover:text-red-900 transtion-all duration-300'>

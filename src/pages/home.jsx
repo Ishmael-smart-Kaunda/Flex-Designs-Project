@@ -5,8 +5,10 @@ import Hero from "../components/Hero"
 import CTA from "../components/home components/CTA"
 
 import Description from "../components/home components/Description"
-import Projects from "../components/home components/Projects"
+// import Projects from "../components/home components/Projects"
 import Footer from "../components/Footer"
+import Testimonials from "../components/home components/Testimonials"
+import Trustedpartners from "../components/home components/Trustedpartners"
 
 export default function Home() {
 
@@ -16,7 +18,9 @@ export default function Home() {
        <Hero/>
        <Description/>
        <CTA/>
-       <Projects/>
+       {/* <Projects/> */}
+       <Testimonials />
+       <Trustedpartners />
        <Footer/>
        
     </>
