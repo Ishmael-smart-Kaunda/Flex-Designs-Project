@@ -9,13 +9,13 @@ const Testcards = ({client_name, client_desc, test_desc, client_img, rating}) =>
         <div className="border bg-transparent border-gray-500 p-6  rounded-3xl hover:shadow-2xl">
                 <FaQuoteRight 
                     size={35}
-                    color='gray' 
+                    className='text-gray-400' 
                 />
                 <div className="my-3 flex flex-row gap-1">
                     {Array.from({length: 5}).map((_, index) => (
                         index < rating
-                        ? <AiFillStar  size={20} color='gold'/>
-                        : <AiOutlineStar size={20} color='gold' />
+                        ? <AiFillStar  size={20} className='text-yellow-400'/>
+                        : <AiOutlineStar size={20} className='text-yellow-400' />
                     ))}
                 </div>
                 <p className='text-gray-500'>
