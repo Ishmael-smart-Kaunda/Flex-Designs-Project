@@ -11,6 +11,7 @@ const Testimonials = () => {
                 client_desc={card.client_desc}
                 test_desc={card.test_desc}
                 client_img= {card.client_img}
+                rating={card.rating}
             />
     })
 

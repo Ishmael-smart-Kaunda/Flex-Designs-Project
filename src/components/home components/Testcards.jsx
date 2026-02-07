@@ -1,9 +1,9 @@
 import React from 'react'
-import { AiFillStar } from 'react-icons/ai'
+import { AiFillStar, AiOutlineStar } from 'react-icons/ai'
 import { FaQuoteRight } from 'react-icons/fa'
 
 
-const Testcards = ({client_name, client_desc, test_desc, client_img}) => {
+const Testcards = ({client_name, client_desc, test_desc, client_img, rating}) => {
   return (
     <div>
         <div className="border bg-transparent border-gray-500 p-6  rounded-3xl hover:shadow-2xl">
@@ -12,11 +12,11 @@ const Testcards = ({client_name, client_desc, test_desc, client_img}) => {
                     color='gray' 
                 />
                 <div className="my-3 flex flex-row gap-1">
-                    <AiFillStar size={20} color='gold' />
-                    <AiFillStar size={20} color='gold' />
-                    <AiFillStar size={20} color='gold' />
-                    <AiFillStar size={20} color='gold' />
-                    <AiFillStar size={20} color='gold' />
+                    {Array.from({length: 5}).map((_, index) => (
+                        index < rating
+                        ? <AiFillStar  size={20} color='gold'/>
+                        : <AiOutlineStar size={20} color='gold' />
+                    ))}
                 </div>
                 <p className='text-gray-500'>
                     {test_desc}
