@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 const CTA = () => {
   return (
     <div className='max-w-[1500px] m-auto pb-0'>
@@ -7,9 +8,11 @@ const CTA = () => {
                  Credit approval, insurance coverage, preparing financial reports or any transactional decision on real etate asset depends on knowing its value.
                  Professional valuations ensure decisions are supported by accurate data and market evidence.
             </p>
-            <link to="/contact" className='text-center w-fit block mt-10 font-bold m-auto cursor-pointer border border-blue-900/50 rounded-md p-2 text-blue-950'>
-                Request A service
-            </link>
+            <Link to="/contact">
+                <button className='text-center w-fit block mt-10 font-bold m-auto cursor-pointer border border-blue-900/50 rounded-md p-2 text-blue-950'>
+                    Request A service
+                </button>
+            </Link>
         </div>
 
        
