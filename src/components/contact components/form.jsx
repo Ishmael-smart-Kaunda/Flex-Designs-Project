@@ -33,7 +33,7 @@ export default function Form(){
                 <option className="bg-red hover:bg-red-800">Property Valuation</option>
                 <option>Property Management</option>
                 <option>Deed Processing</option>
-                <option>Building Designs</option>
+                <option>Building Designing</option>
                 <option>Investiment Advisory/Appraisal</option>
             </select>
                 <textarea 

@@ -7,8 +7,8 @@ export default function BuildingDesigns(){
         
         {/**Nav buttons */}
         const buildingTypes= [
-                           {id:0, name: 'residential'},
-                           {id:1, name: 'retail and Malls'},
+                           {id:0, name: 'Residential'},
+                           {id:1, name: 'Retail and Malls'},
                            {id:2, name: 'Offices'},
                            {id:3, name: 'Industrial'}
         ]
@@ -40,9 +40,10 @@ export default function BuildingDesigns(){
                                 {type.name}
                                 </button>
                                )
-                     })}
+                     }
+                     )
+                     }
 
-                    
                     </div>
                     <AnimatePresence mode="wait">
                     <motion.div 
