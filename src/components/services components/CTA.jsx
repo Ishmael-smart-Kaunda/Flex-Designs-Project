@@ -7,9 +7,9 @@ const CTA = () => {
                  Credit approval, insurance coverage, preparing financial reports or any transactional decision on real etate asset depends on knowing its value.
                  Professional valuations ensure decisions are supported by accurate data and market evidence.
             </p>
-            <a href="/contact" className='text-center w-fit block mt-10 font-bold m-auto cursor-pointer border border-blue-900/50 rounded-md p-2 text-blue-950'>
+            <link to="/contact" className='text-center w-fit block mt-10 font-bold m-auto cursor-pointer border border-blue-900/50 rounded-md p-2 text-blue-950'>
                 Request A service
-            </a>
+            </link>
         </div>
 
        
