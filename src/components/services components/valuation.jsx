@@ -11,12 +11,18 @@ export default function Valuation(){
         return(
                
                 <motion.section 
-                  initial={{x:'50%'}}
-                  animate={{x:0}}
-                  transition={{duration:1}}
+                  initial={{y:'2%'}}
+                  animate={{y:0}}
+                  transition={{duration:0.3}}
                 
-                  className="max-w-[1500px] m-auto p-7 mt-7">
-                   
+                  className="max-w-[1500px] m-auto px-7 pb-5">
+                    {/*service introduction paragraph */}
+                    <p className="w-full text-gray-600 md:w-3/4 m-auto  text-justify md:text-center text-[18px]  md:text-[20px] font-semibold my-10">
+                        End-to-end property valuation services tailored to guide lending, investiment, insurance, 
+                        and financial reporting.
+                   </p>
+
+                   {/*a list of services under property valuation */}
                    <div className=" grid grid-cols-1 md:grid-cols-4 md:grid-rows-4 gap-6">
                     <article className="md:col-span-2 md:row-span-2">
                        <Video/>

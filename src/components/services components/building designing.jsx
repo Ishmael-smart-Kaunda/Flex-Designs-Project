@@ -28,7 +28,13 @@ export default function BuildingDesigns(){
         }
         return(  
                 <section className="overflow-hidden max-w-[1500px] m-auto px-7 ">
-                    <div className="overflow-x-scroll md:overflow-x-hidden flex gap-2 justify-center w-full md:w-fit m-auto text-white font-semibold p-5">
+                     {/*service introduction paragraph */}
+                    <p className="w-full text-gray-600 md:w-3/4 m-auto  text-justify md:text-center text-[18px]  md:text-[20px] font-semibold my-10">
+                        Find ready designed architectural plans across residential, commercial and industrial categories.
+                   </p>
+
+                   {/*a list of predesigned properties*/}
+                    <div className="overflow-x-scroll md:overflow-x-hidden flex gap-2 w-full md:w-fit m-auto text-white font-semibold p-5">
                      {buildingTypes.map((type,i )=>{
                          return(
                                 <button 
@@ -54,7 +60,7 @@ export default function BuildingDesigns(){
                          animate={{opacity:1, y: 0}}
                          
                          transition={{duration:1}}
-                        className=" w-full mb-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+                         className=" w-full mb-10 grid grid-cols-1 md:grid-cols-3 gap-6">
                         {
                         propertyType.map(data=>{
                             return(<Listing 

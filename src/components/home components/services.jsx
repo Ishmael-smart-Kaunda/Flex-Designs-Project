@@ -2,7 +2,7 @@ import ServicesData from "../../data/ServicesData"
 import Service from "./ServiceCard"
 
 
-export default function Projects(){
+export default function Services(){
 
                const services=ServicesData.map(service=>{
                     return(<Service key={service.id} data={service} />)

@@ -20,7 +20,7 @@ export default function DeedProcessing(){
                                     {deedData.map(data=><DeedServices key={data.id} data={data}/>)} 
                                 </div>
                                 
-                                <CTA/>
+                                {/*<CTA/>*/}
                         </section>
                    )
 }

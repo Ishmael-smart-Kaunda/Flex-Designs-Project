@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import logo from "../../assets/logo/flexLogo4.png"
 import { Link } from 'react-router-dom'
 import { AiOutlineMenu, AiOutlineClose, AiOutlineHome, AiTwotoneBuild, AiOutlineCodeSandbox, AiOutlineSearch,} from 'react-icons/ai'
 import { BiNews } from 'react-icons/bi'
@@ -11,7 +12,7 @@ const Navbar = () => {
     const [nav, setNav] = useState(false)
 
   return (
-    <div className='w-full min-h-16 z-50 p-4 fixed top-0 left-0 bg-white border-b-[#333] shadow-2xl mb-13'>
+    <div className='w-full max-h-20 min-h-16 z-50 p-4 fixed top-0 left-0 bg-white border-b-[#333] shadow-2xl mb-13'>
         <div className='max-w-[1500px] h-full m-auto flex justify-between items-center'>
             {/* Left Side */}
             <div className='flex items-center'>
@@ -19,14 +20,24 @@ const Navbar = () => {
                     <AiOutlineMenu  size={30} />
                 </div>
                 <Link to="/">
-                    <h1 className='text-2xl  sm:text-3xl lg:text-4xl px-2'>
+                    <div className='flex flex-row items-end h-12 w-82 bg-slae-500'>
+                        {<img src={logo} className='h-full mr-0 bg-rd-900'/>}
+                         <div >
+                           <h1 className='text-2xl  sm:text-3xl lg:text-xl px-2 text-slate-950 font-bold translate-'>
+                            FLEX REAL ESTATE </h1>
+                            <p className='font-semibold text-[10px] ml-2'>
+                             AGENCY AND CONSULTANCY
+                             </p>
+                         </div>
+                    </div>
+                    {/*<h1 className='text-2xl  sm:text-3xl lg:text-4xl px-2'>
                         Flex <span className='font-bold text-blue-950'>Consultancy</span>
-                    </h1>
+                    </h1>*/}
                 </Link>
-                <div className='hidden lg:flex items-center bg-gray-200 rounded-full p-1 text-[14px]'>
+               { /*<div className='hidden lg:flex items-center bg-gray-200 rounded-full p-1 text-[14px]'>
                     <p className='bg-blue-950 text-white rounded-full p-2'>Property</p>
                     <p className='p-2'>Listings</p>
-                </div>
+                </div>*/}
             </div>
 
             {/* Search Inputs */}
@@ -35,7 +46,7 @@ const Navbar = () => {
                 <input
                     className='bg-transparent p-2 w-full focus:outline-none' 
                     type='text' 
-                    placeholder='Search services' 
+                    placeholder="Search today's listing" 
                 />
             </div>
 
@@ -147,9 +158,16 @@ const Navbar = () => {
                     size={30}
                     className='absolute right-4 top-4 cursor-pointer'
                 />
-                <h2 className='text-2xl p-4'>
-                    Flex <span className='font-bold'>Consultancy</span>
-                </h2>
+                 <div className='flex flex-row items-end h-12 w-82 bg-slae-500'>
+                        {<img src={logo} className='h-full mr-0 bg-rd-900'/>}
+                         <div >
+                           <h1 className='text-2xl  sm:text-3xl lg:text-xl px-2 text-slate-950 font-bold translate-'>
+                            FLEX REAL ESTATE </h1>
+                            <p className='font-semibold text-[10px] ml-2'>
+                             AGENCY AND CONSULTANCY
+                             </p>
+                         </div>
+                    </div>
                 <nav>
                     <ul className='flex flex-col p-4 text-gray-600'>
                         <li className='text-xl py-4 flex hover:text-red-900 transtion-all duration-300'>

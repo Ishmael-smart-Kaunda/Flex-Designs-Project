@@ -1,5 +1,5 @@
 import Home from "./pages/home"
-import Portfolio from "./pages/portifolio"
+
 import Contact from "./pages/contact"
 import Team from "./pages/Team"
 import ValuationPage from "./pages/valuation"
@@ -14,16 +14,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { AnimatePresence } from "framer-motion"
 import { useLocation } from "react-router-dom"
 
-
 function App() {
-
   return (
     <> 
      <BrowserRouter>
       <AnimatePresence>
         <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home/>}/>
-            <Route path="portfolio" element={<Portfolio/>}/>
             <Route path="contact" element={<Contact/>}/>
             <Route path="valuation" element={<ValuationPage/>}/>
             <Route path="management" element={<ManagementPage/>}/>
