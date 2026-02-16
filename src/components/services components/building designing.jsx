@@ -17,7 +17,9 @@ export default function BuildingDesigns(){
         {/**active property type */}
         const [activeIndex, setActiveIndex] =useState(0)
         const propertyType =designsData[activeIndex]
-         
+         function printI(i){
+                   alert(i)
+         }
         {/** staggering variant */}
         const container ={
               hidden:{},
@@ -47,10 +49,12 @@ export default function BuildingDesigns(){
                          return(
                                 <button 
                                 key={type.id}
-                                onClick={()=>setActiveIndex(i)} 
+                                onClick={()=>setActiveIndex(i)}    
+                                className={`${activeIndex ?'bg-red-900':''} bg-zinc-200/70  rounded-sm text-red-950 ring ring-gray-500/1 hover:ring-gray-500/20 py- px-4 rounded-none border-none min-w-40  w-35`}
                                 
-                                className={`${type.id===i ? 'bg-slate-950' : 'bg-red-950'} hover:bg-slate-900 py- px-4 rounded-none border-none min-w-40  w-35`}
                                 >
+                                {/*()=>setActiveIndex(i) */}
+
                                 {type.name}
                                 </button>
                                )

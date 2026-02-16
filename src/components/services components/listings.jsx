@@ -7,9 +7,10 @@ export default function Listing({data}){
                                            <img src={data.Img} className=" object-cover w-full opacity-90 group-hover:opacity-100 h-1/2"/>
                                            <div className=" flex flex-col md:justify-between gap-3 h-1/2 mt-5 text-gray-500 font-sm">
                                                <h4 className="text-[16px] md:text-md font-bold text-blue-950 uppercase">{data.title}</h4>
-                                               <p className="inline-flex gap-2">Location : <span className=""> {data.location}</span></p>
+                                               
+                                               <p className="inline-flex gap-2">{data.for}</p> 
                                                <p className="inline-flex gap-2">{data.bedrooms}</p>  
-                                               <p className="inline-flex gap-2">{data.for}</p>  
+                                               <p className="inline-flex gap-2">Location : <span className=""> {data.location}</span></p>
                                                 {/* display only amount when the property is on sale and include per month when its on rent */}
                                                 {data.for==="For Sale" 
                                                  ? 
