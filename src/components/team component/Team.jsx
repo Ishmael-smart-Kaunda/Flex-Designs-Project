@@ -6,12 +6,19 @@ import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa"
 import teamData from "../../data/teamData"
 import Member from "./member"
 import CTA from "./CTA"
+import { motion } from "framer-motion"
+
 export default function TeamTeeds(){
     const members=teamData.map(member=>{
                     return(<Member key={member.id} data={member}/>)
                     })
     return (
-             <section className="max-w-[1500px] m-auto p-7 mt-12  lg:mt-25">
+              <motion.section 
+                  initial={{y:'5%'}}
+                  animate={{y:0}}
+                  transition={{duration:0.5}}
+
+                className="max-w-[1500px] m-auto p-7 mt-12  lg:mt-25">
                 <h1 className="text-4xl font-bold text-center text-blue-950">Our Team</h1>
                
                     <p className="w-full text-gray-500 md:w-3/4 m-auto  text-center text-xl text-[18px] my-10">
@@ -26,6 +33,6 @@ export default function TeamTeeds(){
                      {members}
                 </div>
                 <CTA/>
-             </section>
+             </motion.section>
     )
 }

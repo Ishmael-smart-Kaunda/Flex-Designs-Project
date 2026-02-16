@@ -1,11 +1,17 @@
 
 import Form from "./form"
 import { FiMapPin, FiMail, FiInbox, FiPhone } from "react-icons/fi"
-
+import { motion } from "framer-motion"
 
 export default function ContactDetails(){
          return(
-                <section className="max-w-[1500px] m-auto p-7 mt-12  lg:mt-25 ">
+                 <motion.section 
+                  initial={{y:'5%'}}
+                  animate={{y:0}}
+                  transition={{duration:0.5}}
+                
+                      className="max-w-[1500px] m-auto p-7 mt-12  lg:mt-25 "
+                      >
                      <p className="text-2xl text-center text-gray-600 py-10">
                         We are ready to offer clear guidance and professional support.
                      </p>
@@ -34,13 +40,13 @@ export default function ContactDetails(){
                                 </span>
                                 <span  className="flex flex-row  flex-wrap items-center gap-2 font-normal "> 
                                 <FiMail className="size-4  text-gray-500 "/> 
-                                <a href="mailto:flexrealestateconsultancy@gmail.com " className="font-semibold text-zinc-500 not-italic">flexrealestateconsultancy@gmail.com</a> 
+                                <a href="mailto:flexrealestateagency3@gmail.com" className="font-semibold text-zinc-500 not-italic">flexrealestateagency3@gmail.com</a> 
                                 </span>
                         </address>
                        
                     </article>
                     <Form/>
                     </div>
-                </section>
+                </motion.section>
          )
 }

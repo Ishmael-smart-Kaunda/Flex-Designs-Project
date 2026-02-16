@@ -1,10 +1,16 @@
 
 import DevProcesses from "./processes";
 import devProcessData from "../../data/devProcessData";
+import { motion } from "framer-motion";
+
 
 export default function Development(){
          return(
-                 <section className="max-w-[1500px] m-auto px-7 pb-5">
+                 <motion.section 
+                     initial={{y:'5%'}}
+                     animate={{y:0}}
+                     transition={{duration:0.5}}
+                     className="max-w-[1500px] m-auto px-7 pb-5">
                   
                     <p className="w-full text-gray-600 md:w-3/4 m-auto text-justify md:text-center text-[18px]  md:text-[20px] font-semibold my-10">
                      From land acquisition to final handover, we guide property developments with clarity, technical
@@ -12,7 +18,7 @@ export default function Development(){
                      successful projects with confidence.
                     </p>
                    <DevProcesses stages={devProcessData}/>
-                </section>
+                </motion.section>
          )
 }
 

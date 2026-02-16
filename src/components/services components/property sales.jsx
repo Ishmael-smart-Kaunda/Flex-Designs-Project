@@ -1,12 +1,19 @@
 
 import listingsData from "../../data/listingsData"
 import Listing from "./listings"
+import { motion } from "framer-motion"
+
 export default function PropertSales(){
         return(  
-                <section className="max-w-[1500px] m-auto px-7 pb-5">
+                <motion.section 
+                  initial={{y:'5%'}}
+                  animate={{y:0}}
+                  transition={{duration:0.5}}
+                
+                className="max-w-[1500px] m-auto px-7 pb-5">
                     {/*service introduction paragraph */}
                     <p className="w-full text-gray-600 md:w-3/4 m-auto  text-justify md:text-center text-[18px]  md:text-[20px] font-semibold my-10">
-                        Browse our current listings for sale and letting, covering Homes, Offices, Ware houses, and others.
+                        Browse our current listings for sale and letting, covering Homes, Offices, Ware houses, bare land and others.
                    </p>
 
                    {/*a list of properties on sale and/or for rent */}
@@ -23,6 +30,6 @@ export default function PropertSales(){
                       }
                    </div>
 
-                </section>
+                </motion.section>
         )
 }

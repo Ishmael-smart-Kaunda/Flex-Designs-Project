@@ -29,6 +29,7 @@ export default function DevProcesses({stages}){
                            md:border-b-4 
                            border-red-900
                            bg-zinc-300"
+                           
                 >
                          {stage.description}
               </p> 

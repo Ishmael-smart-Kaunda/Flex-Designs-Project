@@ -11,9 +11,9 @@ export default function Valuation(){
         return(
                
                 <motion.section 
-                  initial={{y:'2%'}}
+                  initial={{y:'5%'}}
                   animate={{y:0}}
-                  transition={{duration:0.3}}
+                  transition={{duration:0.5}}
                 
                   className="max-w-[1500px] m-auto px-7 pb-5">
                     {/*service introduction paragraph */}

@@ -4,11 +4,16 @@ import CTA from "./CTA"
 import managementData from "../../data/managementData"
 import Video from "./video"
 import Services from "./services"
-
+import { motion } from "framer-motion"
 export default function Management(){
         return(
                
-                <section className="max-w-[1500px] m-auto px-7 ">
+                <motion.section 
+                  initial={{y:'5%'}}
+                  animate={{y:0}}
+                  transition={{duration:0.5}}
+                
+                   className="max-w-[1500px] m-auto px-7 ">
                    <p className="w-full text-gray-600 md:w-3/4 m-auto  text-justify md:text-center text-[18px]  md:text-[20px] font-semibold my-10">
                         Explore our range of property management services designed to support effective
                         administration and long-term performance of your real estate assets.
@@ -29,6 +34,6 @@ export default function Management(){
                    </div>
 
                 <CTA/>
-                </section>
+                </motion.section>
         )
 }

@@ -3,6 +3,8 @@ import designsData from "../../data/designsData"
 
 import { useState } from "react"
 import { AnimatePresence, motion } from "framer-motion"
+
+
 export default function BuildingDesigns(){
         
         {/**Nav buttons */}
@@ -27,7 +29,13 @@ export default function BuildingDesigns(){
               }
         }
         return(  
-                <section className="overflow-hidden max-w-[1500px] m-auto px-7 ">
+                <motion.section 
+                    initial={{y:'5%'}}
+                    animate={{y:0}}
+                    transition={{duration:0.5}} 
+                     className="overflow-hidden max-w-[1500px] m-auto px-7 ">
+
+
                      {/*service introduction paragraph */}
                     <p className="w-full text-gray-600 md:w-3/4 m-auto  text-justify md:text-center text-[18px]  md:text-[20px] font-semibold my-10">
                         Find ready designed architectural plans across residential, commercial and industrial categories.
@@ -72,6 +80,6 @@ export default function BuildingDesigns(){
                         }
                     </motion.div>
                  </AnimatePresence>
-                </section>
+                </motion.section>
         )
 }

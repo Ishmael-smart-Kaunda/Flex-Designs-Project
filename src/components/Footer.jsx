@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FiFacebook, FiTwitter, FiX, FiLinkedin, FiInstagram, FiMail, FiMapPin, FiPhone  } from "react-icons/fi";
 export default function Footer(){
                return(
@@ -8,33 +9,45 @@ export default function Footer(){
                           
                           <article className=" ">
                             <h3 className="font-medium pb-1">GO TO</h3>
-                            <ul className="flex flex-col items-start gap-1 transition-all duration-500">
-                                <li> <a href="/" className="font-semibold text-sm text-gray-500  hover:text-red-900 transition-all duration-500">Home</a></li>
-                                <li> <a href="/" className="font-semibold text-sm text-gray-500  hover:text-red-900 transition-all duration-500">Team</a></li>
-                                <li> <a href="/" className="font-semibold text-sm text-gray-500  hover:text-red-900 transition-all duration-500">Contact</a></li>
+                            <ul className="flex flex-col items-start gap-3 transition-all duration-500">
+                                <Link to="/"> 
+                                  <a className="font-semibold text-sm text-gray-500  hover:text-red-900 transition-all duration-500">
+                                  Home
+                                </a>
+                                </Link>
+                                <Link to="/team"> 
+                                  <a className="font-semibold text-sm text-gray-500  hover:text-red-900 transition-all duration-500">
+                                  Team
+                                  </a>
+                                </Link>
+                                <Link to="/contact">  
+                                  <a className="font-semibold text-sm text-gray-500  hover:text-red-900 transition-all duration-500">
+                                  Contact
+                                  </a>
+                               </Link>
                             </ul>
                           </article>
 
                           <article className="text-slate-800">
                              <h3 className="font-medium mb-2">GET IN TOUCH</h3>
-                               <address className="flex flex-col items-start gap-3">
+                               <address className="flex flex-col items-start gap-4">
                                   <span className="flex flex-row items-center gap-2 font-normal ">
                                     <FiMapPin className="size-4  text-gray-500 "/>
                                     <p className="font-semibold text-sm text-zinc-500 not-italic">Kang'ombe House</p>
                                   </span>
                                   <span className="group flex flex-row items-center gap-2 font-normal "> 
-                                    <FiPhone className="size-4 text-gray-500 group-hover:text-red-900/70 transition-all duration-500"/> 
-                                    <a href="tell: +265994873373" className="font-semibold text-sm text-gray-500 group-hover:text-red-900/70 transition-all duration-500 not-italic"> +265 994 87 33 73</a>
+                                    <FiPhone className="pointer size-4 text-gray-500 group-hover:text-red-900/70 transition-all duration-500"/> 
+                                    <a href="tel:+265994873373" className="font-semibold text-sm text-gray-500 group-hover:text-red-900/70 transition-all duration-500 not-italic"> +265 994 87 33 73</a>
                                   </span>
                                   <span  className="group flex flex-row  flex-wrap items-center gap-2 font-normal "> 
                                     <FiMail className="size-4 text-gray-500 group-hover:text-red-900/70 transition-all duration-500"/> 
-                                    <a href="mailto : flexrealestateagency3@gmail.com" className="font-semibold text-gray-500 text-sm group-hover:text-red-900/70 not-italic transition-all duration-500">flexconsultancy@gmail.com</a> 
+                                    <a href="mailto:flexrealestateagency3@gmail.com" className="font-semibold text-gray-500 text-sm group-hover:text-red-900/70 not-italic transition-all duration-500">flexconsultancy@gmail.com</a> 
                                   </span>
                                 </address>
                                </article>
                              </div>
 
-                             <article className="mx-5 grid grid-cols-2 gap-2 text-zinc-400 items-center gap-3">
+                             <article className="m-5 md:my-0 grid grid-cols-2 gap-2 text-zinc-400 items-center gap-3 ">
                                 <a href="https://www.facebook.com/profile.php?id=61571537850295">
                                   <FiFacebook className="bg-stone-100  p-4 rounded-sm w-full h-20 hover:scale-102 hover:text-slate-900/70 transition-all duration-500"/>
                                 </a>

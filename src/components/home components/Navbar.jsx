@@ -12,48 +12,43 @@ const Navbar = () => {
     const [nav, setNav] = useState(false)
 
   return (
-    <div className='w-full max-h-20 min-h-16 z-50 p-4 fixed top-0 left-0 bg-white border-b-[#333] shadow-2xl mb-13'>
+    <div className='w-full max-h-20 min-h-16  p-4 fixed top-0 z-50 bg-white border-b-[#333] shadow-2xl'>
         <div className='max-w-[1500px] h-full m-auto flex justify-between items-center'>
             {/* Left Side */}
             <div className='flex items-center'>
-                <div onClick={() => setNav(!nav)} className='cursor-pointer lg:hidden'>
+                <div onClick={() => setNav(!nav)} className='cursor-pointer lg:hidden text-gray-600'>
                     <AiOutlineMenu  size={30} />
                 </div>
                 <Link to="/">
-                    <div className='flex flex-row items-end h-12 w-82 bg-slae-500'>
-                        {<img src={logo} className='h-full mr-0 bg-rd-900'/>}
+                    
+                    <div className='ml-4 flex whitespace-nowrap items-center h-12 w-82'>
+                        {<img src={logo} className='p-0.5 bg-zinc-100 rounded-lg h-[80%] bg-rd-900'/>}
                          <div >
-                           <h1 className='text-2xl  sm:text-3xl lg:text-xl px-2 text-slate-950 font-bold translate-'>
+                           <h1 className='text-md px-2 text-slate-950 font-bold'>
                             FLEX REAL ESTATE </h1>
                             <p className='font-semibold text-[10px] ml-2'>
                              AGENCY AND CONSULTANCY
                              </p>
                          </div>
                     </div>
-                    {/*<h1 className='text-2xl  sm:text-3xl lg:text-4xl px-2'>
-                        Flex <span className='font-bold text-blue-950'>Consultancy</span>
-                    </h1>*/}
                 </Link>
-               { /*<div className='hidden lg:flex items-center bg-gray-200 rounded-full p-1 text-[14px]'>
-                    <p className='bg-blue-950 text-white rounded-full p-2'>Property</p>
-                    <p className='p-2'>Listings</p>
-                </div>*/}
             </div>
 
             {/* Search Inputs */}
-            <div className='hidden sm:flex items-center bg-gray-200 rounded-full px-2 w-[300px] lg:w-[400px]'>
+            <div className='invisible md:visible flex items-center bg-gray-200 rounded-full px-2 w-[300px] lg:w-[400px]'>
                 <AiOutlineSearch size={25} />
                 <input
                     className='bg-transparent p-2 w-full focus:outline-none' 
                     type='text' 
-                    placeholder="Search today's listing" 
+                    value=""
+                    placeholder="" 
                 />
             </div>
 
-            {/* Newsletters */}
-            <div className='hidden lg:flex items-center gap-8 cursor-pointer'>
+            {/* Newsletters */} {/* original newsletter style : hidden lg:flex */}
+            <div className='flex items-center gap-8 cursor-pointer'>
                 <div className='group relative'>
-                    <p className='font-medium group-hover:bg-gray-200 px-4 py-2 rounded-full flex items-center gap-1.5 hover:text-red-900 transtion-all duration-300'>
+                    <p className='invisible md:visible font-medium group-hover:bg-gray-200 px-4 py-2 rounded-full flex items-center gap-1.5 hover:text-red-900 transtion-all duration-300'>
                         Services
                         <RiArrowDropDownLine 
                             size={25}
@@ -74,16 +69,17 @@ const Navbar = () => {
                         group-hover:visible
                         group-hover:translate-y-0
                         text-gray-600 
-                    '>
-                        <ul>
+                    '
+                    >
+                      <ul>
                             <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
                                 <FaBalanceScaleRight
                                     size={25}
                                     className='mr-4 '
                                 />
-
                                 <Link to="/valuation">Property Valuation</Link>
                             </li>
+                            
                             <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
                                 <AiOutlineHome
                                     size={25}
@@ -91,6 +87,7 @@ const Navbar = () => {
                                 />
                                 <Link to="/management">Property Management</Link>
                             </li>
+
                             <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
                                 <AiTwotoneBuild 
                                     size={25}
@@ -98,6 +95,7 @@ const Navbar = () => {
                                 />
                                 <Link to="/development">Property Development</Link>
                             </li>
+
                             <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
                                 <FcProcess
                                     size={25}
@@ -105,6 +103,7 @@ const Navbar = () => {
                                 />
                                <Link to="/deedprocessing"> Deed Processing</Link>
                             </li>
+
                             <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
                                 <AiOutlineCodeSandbox 
                                     size={25}
@@ -112,13 +111,15 @@ const Navbar = () => {
                                 />
                                 <Link to="/designing">Building Design</Link>
                             </li>
+
                             <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
                                 <RiExchangeDollarLine
                                     size={25}
                                     className='mr-4'
                                 />
-                                <Link to="/auctioning">Auctioning</Link>
+                                <Link to="/auctioning">Listings</Link>
                             </li>
+
                              <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
                                 <FiTrendingUp
                                     size={25}
@@ -126,24 +127,22 @@ const Navbar = () => {
                                 />
                                 <Link to="/appraisal">Investiment Appraisal</Link>
                             </li>
+                            
                         </ul>
                     </div>
                 </div>
                 
-                <p className='font-medium hover:bg-gray-200 px-4 py-2 rounded-full hover:text-red-900 transtion-all duration-300'>
+                <p className='hidden lg:flex font-medium hover:bg-gray-200 px-4 py-2 rounded-full hover:text-red-900 transtion-all duration-300'>
                      <Link to='/team' >Team</Link>
                 </p>
-                <button className='bg-blue-950 cursor-pointer text-white py-2 flex items-center rounded-full hover:opacity-90 transtion-all duration-300'>
-                    <BiNews className='mr-2' size={20}  />
+                <button className='bg-blue-950 cursor-pointer text-white whitespace-nowrap py-2 flex items-center rounded-full hover:opacity-90 transtion-all duration-300'>
+                    <BiNews className='mr-2' size={20}/>
                     
                      <Link to='/contact' >Get Started</Link>
                 </button>
             </div>
 
-
             {/* Dropdown */}
-
-            
 
             {/* Mobile Menu */}
             {/* Overlay */}
@@ -152,22 +151,26 @@ const Navbar = () => {
             : " "}
 
             {/* Side Drawer Menu */}
-            <div className={nav ? 'fixed top-0 left-0 w-75 h-screen bg-white z-50 duration-300' : 'fixed top-0 left-[-100%] w-[300px] h-screen bg-white z-10 duration-300'}>
+            <div className={nav ? ' fixed top-0 left-0 w-75 h-screen bg-white z-50 duration-300' : 'fixed top-0 left-[-100%] w-[300px] h-screen bg-white z-10 duration-300'}>
                 <AiOutlineClose
                     onClick={() => setNav(!nav)} 
                     size={30}
-                    className='absolute right-4 top-4 cursor-pointer'
+                    className='absolute right-4 top-4 cursor-pointer text-gray-600'
                 />
-                 <div className='flex flex-row items-end h-12 w-82 bg-slae-500'>
-                        {<img src={logo} className='h-full mr-0 bg-rd-900'/>}
-                         <div >
-                           <h1 className='text-2xl  sm:text-3xl lg:text-xl px-2 text-slate-950 font-bold translate-'>
-                            FLEX REAL ESTATE </h1>
+                {/*logo */}
+                 <div className='ml-4 pr-2 flex flex-row items-end h-12 w-fit '>
+                        <img src={logo} className=' p-0.5 bg-zinc-100 rounded-lg h-[80%] mr-0 bg-rd-900'/>
+                         
+                         <div>
+                            <h1 className='text-md px-2 whitespace-nowrap text-slate-950 font-bold'>
+                              FLEX REAL ESTATE 
+                            </h1>
                             <p className='font-semibold text-[10px] ml-2'>
-                             AGENCY AND CONSULTANCY
-                             </p>
+                              AGENCY AND CONSULTANCY
+                            </p>
                          </div>
-                    </div>
+                 </div>
+
                 <nav>
                     <ul className='flex flex-col p-4 text-gray-600'>
                         <li className='text-xl py-4 flex hover:text-red-900 transtion-all duration-300'>
@@ -231,7 +234,7 @@ const Navbar = () => {
                                 size={25}
                                 className='mr-4'
                             />
-                            <Link to="/auctioning">Auctioning</Link>
+                            <Link to="/auctioning">Listings</Link>
                         </li>
                          <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
                                 <FiTrendingUp

@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom"
 
 export default function Listing({data}){
                         return(
@@ -17,8 +17,9 @@ export default function Listing({data}){
                                                  : 
                                                  <p className="inline-flex gap-2">Amount  : MWK <span className="text-red-900 font-semibold"> {data.amount}</span> / month</p> 
                                                 }
-                                              
-                                               <a href="/contact" className="w-fit font-semibold text-sm text-slate-900 hover:text-red-900 transtion-all duration-300">Talk to Us</a>                                         
+                                               <Link to="/contact">
+                                                  <a className="w-fit font-semibold text-sm text-slate-900 hover:text-red-900 transtion-all duration-300">Talk to Us</a>                                         
+                                                </Link>
                                            </div> 
                                </article> 
                         )

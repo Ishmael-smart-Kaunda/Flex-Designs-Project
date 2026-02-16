@@ -2,11 +2,16 @@
 import deedData from "../../data/deedData"
 import DeedServices from "./deedService"
 import Video from "./video"
+import { motion } from "framer-motion"
 import CTA from "./CTA"
 
 export default function DeedProcessing(){
                   return(
-                         <section className="max-w-[1500px] m-auto p-7 mt-7 ">
+                         <motion.section 
+                                initial={{y:'2%'}}
+                                animate={{y:0}}
+                                transition={{duration:0.3}} 
+                                className="max-w-[1500px] m-auto p-7 mt-7 ">
                                 
                                 <p className="text-xl w-full text-gray-500 md:w-3/4 m-auto  text-center text-xl text-[18px] mb-3">
                                   What We Do
@@ -21,6 +26,6 @@ export default function DeedProcessing(){
                                 </div>
                                 
                                 {/*<CTA/>*/}
-                        </section>
+                        </motion.section>
                    )
 }

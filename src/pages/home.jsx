@@ -8,11 +8,12 @@ import Description from "../components/home components/Description"
 import Services from "../components/home components/services"
 import Footer from "../components/Footer"
 
+
 export default function Home() {
 
   return (
     <> 
-       <Navbar/>
+       <Navbar />
        <Hero/>
        <Description/>
        <CTA/>

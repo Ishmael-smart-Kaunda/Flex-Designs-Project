@@ -1,10 +1,14 @@
 import React from 'react'
 import { BsArrowRight } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
-
+import { motion } from 'framer-motion'
 const Hero = () => {
   return (
-    <div className="max-w-[1500px] mx-auto p-4 mt-20 lg:mt-28">
+     <motion.section 
+                  initial={{y:'5%'}}
+                  animate={{y:0}}
+                  transition={{duration:0.5}}
+    className="max-w-[1500px] mx-auto p-4 mt-20 lg:mt-28">
         <div className="relative overflow-hidden rounded-xl">
 
             {/* Background Image */}
@@ -69,7 +73,7 @@ const Hero = () => {
 
             </div>
         </div>
-    </div>
+    </motion.section>
 
 )
 }
