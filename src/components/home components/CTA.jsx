@@ -24,7 +24,13 @@ const CTA = () => {
             </Link>
         </div>
 
-       
+       <br />
+
+        <hr 
+            className='w-[80%] m-auto my-2  border-blue-950/20'
+        />
+
+        <br />
     </div>
   )
 }
