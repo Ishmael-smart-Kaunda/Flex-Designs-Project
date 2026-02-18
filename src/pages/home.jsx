@@ -9,6 +9,7 @@ import Description from "../components/home components/Description"
 import Footer from "../components/Footer"
 import Testimonials from "../components/home components/Testimonials"
 import Trustedpartners from "../components/home components/Trustedpartners"
+import Propertylistings from "./Propertylistings"
 
 export default function Home() {
 
@@ -22,7 +23,9 @@ export default function Home() {
        <Testimonials />
        <Trustedpartners />
        <Footer/>
-       
+       <br />
+       <br />
+       {/* <Propertylistings /> */}
     </>
   )
 }

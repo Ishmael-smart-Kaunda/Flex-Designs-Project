@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { AiOutlineClose, AiOutlineSearch } from 'react-icons/ai'
-
+import { properties } from '../../data/propertyListingData'
 
 const Searchbar = () => {
 
@@ -19,28 +19,38 @@ const Searchbar = () => {
     }
 
     const handleKeyDown = e => {
-        if(selectedItem < searchData.length) {
-            if (e.key === "ArrowUp" && selectedItem > 0) {
-                setSelectedItem(prevState => prevState - 1)
-            }
-            else if (e.key === "ArrowDown" && selectedItem < searchData.length - 1) {
-                setSelectedItem(prevState => prevState + 1)
-            }
-            else if (e.key === "Enter" && selectedItem >= 0) {
-                window.open(searchData[selectedItem].show.url)
-            }
-        }else {
-            setSelectedItem(-1)
+        if (!searchData.length) return
+
+        if (e.key === "ArrowUp" && selectedItem > 0) {
+            setSelectedItem(prev => prev - 1)
+        }
+
+        if (e.key === "ArrowDown" && selectedItem < searchData.length - 1) {
+            setSelectedItem(prev => prev + 1)
+        }
+
+        if (e.key === "Enter" && selectedItem >= 0) {
+            window.open(searchData[selectedItem].url)
         }
     }
 
+
     useEffect(() => {
-        if (search !== ""){
-            fetch(`http://api.tvmaze.com/search/shows?q=${search}`).
-            then(res => res.json()).
-            then(data => setSearchData(data))
+        if (!search.trim()) {
+            setSearchData([])
+            setSelectedItem(-1)
+            return
         }
+
+        const newFilterData = properties.filter(property =>
+            property.propertyType
+            .toLowerCase()
+            .includes(search.toLowerCase())
+        )
+
+        setSearchData(newFilterData)
     }, [search])
+
 
 
 
@@ -61,14 +71,16 @@ const Searchbar = () => {
                     onKeyDown={handleKeyDown}
                 />
             </div>
-            <div className={search !== "" ? 
-                "absolute left-0 top-full mt-3 w-full h-fit rounded-lg py-4 px-2 bg-white/95 shadow-2xl translate-y-2 text-gray-600 flex flex-col" : "opacity-0 invisible"
+            <div className={
+                searchData.length > 0
+                ? "absolute left-0 top-full mt-3 w-full rounded-lg py-4 px-2 bg-white shadow-2xl text-gray-600 flex flex-col"
+                : "hidden"
             }>
                 {
-                    searchData.map((data, index) => {
+                    searchData.slice(0, 10).map((data, index) => {
                         return (
                             <a 
-                                href={data.show.url} 
+                                // href={data.show.url} 
                                 key={index} 
                                 target='_blank'
                                 className={
@@ -77,7 +89,7 @@ const Searchbar = () => {
                                     : "p-0.5 bg-transparent w-full"
                                 }
                             >
-                                {data.show.name}
+                                {data.title}
                             </a>
                         )
                     })
