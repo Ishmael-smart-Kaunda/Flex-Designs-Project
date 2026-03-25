@@ -22,7 +22,7 @@ export default function ContactDetails(){
                                 <h3 className="font-medium pb-1 text-gray-600 not-italic">REACH US</h3>
                                 <span className="flex flex-row items-center gap-2 font-normal "> 
                                 <FiPhone className="size-4  text-gray-500"/> 
-                                <a href="tel: +265881550810" className="font-semibold text-sm text-zinc-500 not-italic"> +265 88 155 0810</a>
+                                <a href="tel: +265981457286" className="font-semibold text-sm text-zinc-500 not-italic"> +265 981 45 72 86</a>
                                 </span>
                                 <span className="flex flex-row items-center gap-2  font-normal ">
                                 <FiMapPin className="size-4  text-gray-500"/>
@@ -30,11 +30,11 @@ export default function ContactDetails(){
                                 </span>
                                 <span className="flex flex-row items-center gap-2  font-normal ">
                                 <FiInbox className="size-4  text-gray-500 "/>
-                                <p className="font-semibold text-sm text-zinc-500 not-italic ">Flex Real Estate Consutancy, Box 345, Blantyre</p>
+                                <p className="font-semibold text-sm text-zinc-500 not-italic ">JMK Estate Consutants, Box 345, Blantyre</p>
                                 </span>
                                 <span  className="flex flex-row  flex-wrap items-center gap-2 font-normal "> 
                                 <FiMail className="size-4  text-gray-500 "/> 
-                                <a href="mailto:flexrealestateconsultancy@gmail.com " className="font-semibold text-zinc-500 not-italic">flexrealestateconsultancy@gmail.com</a> 
+                                <a href="mailto:jmkrealestateconsultants@gmail.com " className="font-semibold text-zinc-500 not-italic">jmkrealestateconsultants@gmail.com</a> 
                                 </span>
                         </address>
                        

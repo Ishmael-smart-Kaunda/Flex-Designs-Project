@@ -41,14 +41,14 @@ export default function Footer(){
                                   </span>
                                   <span  className="group flex flex-row  flex-wrap items-center gap-2 font-normal "> 
                                     <FiMail className="size-4 text-gray-500 group-hover:text-red-900/70 transition-all duration-500"/> 
-                                    <a href="mailto:" className="font-semibold text-gray-500 text-sm group-hover:text-red-900/70 not-italic transition-all duration-500">ishmaelsmart005@gmail.com</a> 
+                                    <a href="mailto:" className="font-semibold text-gray-500 text-sm group-hover:text-red-900/70 not-italic transition-all duration-500">jmkrealestateconsultants@gmail.com</a> 
                                   </span>
                                 </address>
                                </article>
                              </div>
 
                              <article className="m-5 md:my-0 grid grid-cols-2 gap-2 text-zinc-400 items-center gap-3 ">
-                                <a href="#">
+                                <a href="/">
                                   <FiFacebook className="bg-stone-100  p-4 rounded-sm w-full h-20 hover:scale-102 hover:text-slate-900/70 transition-all duration-500"/>
                                 </a>
                                 
@@ -56,7 +56,7 @@ export default function Footer(){
                                   <FiTwitter className="bg-stone-100  p-4 rounded-sm w-full h-20 hover:scale-102 hover:text-slate-900/70 transition-all duration-500"/>
                                 </a>
 
-                                <a href="#">
+                                <a href="/">
                                   <FiLinkedin className="bg-stone-100  p-4 rounded-sm w-full h-20 hover:scale-102 hover:text-slate-900/70 transition-all duration-500"/>
                                 </a>
 
@@ -65,7 +65,7 @@ export default function Footer(){
                                 </a> 
                              </article>
                             </div>
-                          <p className="absolute bottom-0 w-full bg-slate-950 p-2  text-center text-gray-600 text-sm "> © <span>2026</span> Flex Consultancy : All rights reserved.</p>
+                          <p className="absolute bottom-0 w-full bg-slate-950 p-2  text-center text-gray-600 text-sm "> © <span>2026</span> JMK Real Estate Consultants : All rights reserved.</p>
                        </footer>
                       
 

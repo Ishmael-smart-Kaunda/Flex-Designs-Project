@@ -166,7 +166,7 @@ const Navbar = () => {
                               JMK 
                             </h1>
                             <p className='font-semibold text-[10px] ml-2'>
-                              AGENCY AND CONSULTANTS
+                              REAL ESTATE CONSULTANTS
                             </p>
                          </div>
                  </div>
