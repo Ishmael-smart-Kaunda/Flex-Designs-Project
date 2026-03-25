@@ -3,7 +3,7 @@ import { FaFacebook, FaLinkedin, FaInstagram, FaTiktok, FaWhatsapp } from "react
 export default function Member({data}){
                return(
                         <article className="flex flex-col gap-2 bg-zinc-100 rounded-2xl p-4 text-gray-500 ">
-                            <img src={data.Img} className=" rounded-xl " alt="Felix Nyirenda"/>
+                            <img src={data.Img} className="h-[65%] border rounded-xl " alt="Ishmael kaunda"/>
                             
                            
                                 <h4 className="font-bold text-sm text-blue-950/60 text-[16px]">{data.name}</h4>

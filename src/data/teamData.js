@@ -9,7 +9,7 @@ export default [
                 {
                     id:0,
                     Img:felix,
-                    name:"Felix Nyirenda",
+                    name:"Ishmael Kaunda",
                     title:"Chief Executive Officer",
                     description:`Sets the company's vision, drives growth, and ensures the business delivers trusted,
                                  comprehensive and high quality property services.`,
@@ -30,7 +30,7 @@ export default [
                 {
                     id:1,
                     Img:felix,
-                    name:"Willian Daka",
+                    name:"Ishmael Kaunda",
                     title:"Property Manager",
                     description:`Oversees daily property operations, performance, and tenant relations to ensure properties
                                  are well-managed, compliant, and performing effectively.`,
@@ -51,7 +51,7 @@ export default [
                 {
                     id:2,
                     Img:felix,
-                    name:"Zondwayo Khonje",
+                    name:"Ishmael Kaunda",
                     title:"Land Survey Lead",
                     description:`Directs all surveying operations including boundary determination, topographical surveys, and site measurements
                                 to ensure accuracy, and integrity of survey data.`,
