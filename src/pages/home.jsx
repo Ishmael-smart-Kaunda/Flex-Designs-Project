@@ -7,7 +7,8 @@ import CTA from "../components/home components/CTA"
 import Description from "../components/home components/Description"
 import Services from "../components/home components/services"
 import Footer from "../components/Footer"
-
+import Testimonials from "../components/home components/Testimonials"
+import Trustedpartners from "../components/home components/Trustedpartners"
 
 export default function Home() {
 
@@ -18,6 +19,8 @@ export default function Home() {
        <Description/>
        <CTA/>
        <Services/>
+       <Testimonials />
+       <Trustedpartners />
        <Footer/>
        
     </>
