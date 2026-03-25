@@ -45,7 +45,6 @@ function App() {
             <Route path="auctioning" element={<AuctioningPage/>}/>
             <Route path="appraisal" element={<AppraisalPage/>}/>
             <Route path="team" element={<Team/>}/>
-
         </Routes>
         </AnimatePresence>
     </BrowserRouter>

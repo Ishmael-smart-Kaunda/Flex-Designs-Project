@@ -37,18 +37,18 @@ export default function Footer(){
                                   </span>
                                   <span className="group flex flex-row items-center gap-2 font-normal "> 
                                     <FiPhone className="pointer size-4 text-gray-500 group-hover:text-red-900/70 transition-all duration-500"/> 
-                                    <a href="tel:+265994873373" className="font-semibold text-sm text-gray-500 group-hover:text-red-900/70 transition-all duration-500 not-italic"> +265 994 87 33 73</a>
+                                    <a href="tel:+265981457286" className="font-semibold text-sm text-gray-500 group-hover:text-red-900/70 transition-all duration-500 not-italic"> +265 981 45 72 86</a>
                                   </span>
                                   <span  className="group flex flex-row  flex-wrap items-center gap-2 font-normal "> 
                                     <FiMail className="size-4 text-gray-500 group-hover:text-red-900/70 transition-all duration-500"/> 
-                                    <a href="mailto:flexrealestateagency3@gmail.com" className="font-semibold text-gray-500 text-sm group-hover:text-red-900/70 not-italic transition-all duration-500">flexconsultancy@gmail.com</a> 
+                                    <a href="mailto:" className="font-semibold text-gray-500 text-sm group-hover:text-red-900/70 not-italic transition-all duration-500">ishmaelsmart005@gmail.com</a> 
                                   </span>
                                 </address>
                                </article>
                              </div>
 
                              <article className="m-5 md:my-0 grid grid-cols-2 gap-2 text-zinc-400 items-center gap-3 ">
-                                <a href="https://www.facebook.com/profile.php?id=61571537850295">
+                                <a href="#">
                                   <FiFacebook className="bg-stone-100  p-4 rounded-sm w-full h-20 hover:scale-102 hover:text-slate-900/70 transition-all duration-500"/>
                                 </a>
                                 
@@ -56,7 +56,7 @@ export default function Footer(){
                                   <FiTwitter className="bg-stone-100  p-4 rounded-sm w-full h-20 hover:scale-102 hover:text-slate-900/70 transition-all duration-500"/>
                                 </a>
 
-                                <a href="/">
+                                <a href="#">
                                   <FiLinkedin className="bg-stone-100  p-4 rounded-sm w-full h-20 hover:scale-102 hover:text-slate-900/70 transition-all duration-500"/>
                                 </a>
 

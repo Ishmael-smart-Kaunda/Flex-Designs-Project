@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import logo from "../../assets/logo/flexLogo4.png"
-import { Link } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import { AiOutlineMenu, AiOutlineClose, AiOutlineHome, AiTwotoneBuild, AiOutlineCodeSandbox, AiOutlineSearch,} from 'react-icons/ai'
 import { BiNews } from 'react-icons/bi'
 import { FaBlogger, FaBalanceScaleRight } from 'react-icons/fa'
@@ -24,10 +24,10 @@ const Navbar = () => {
                     <div className='ml-4 flex whitespace-nowrap items-center h-12 w-82'>
                         {<img src={logo} className='p-0.5 bg-zinc-100 rounded-lg h-[80%] bg-rd-900'/>}
                          <div >
-                           <h1 className='text-md px-2 text-slate-950 font-bold'>
-                            FLEX REAL ESTATE </h1>
+                           <h1 className='text-md px-2 text-yellow-700 font-bold'>
+                             JMK  </h1>
                             <p className='font-semibold text-[10px] ml-2'>
-                             AGENCY AND CONSULTANCY
+                             REAL ESTATE CONSULTANTS
                              </p>
                          </div>
                     </div>
@@ -35,7 +35,7 @@ const Navbar = () => {
             </div>
 
             {/* Search Inputs */}
-            <div className='invisible md:visible flex items-center bg-gray-200 rounded-full px-2 w-[300px] lg:w-[400px]'>
+            <div className='invisible flex items-center bg-gray-200 rounded-full px-2 w-[300px] lg:w-[400px]'>
                 <AiOutlineSearch size={25} />
                 <input
                     className='bg-transparent p-2 w-full focus:outline-none' 
@@ -77,7 +77,7 @@ const Navbar = () => {
                                     size={25}
                                     className='mr-4 '
                                 />
-                                <Link to="/valuation">Property Valuation</Link>
+                                <NavLink to="/valuation">Property Valuation</NavLink>
                             </li>
                             
                             <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
@@ -85,7 +85,7 @@ const Navbar = () => {
                                     size={25}
                                     className='mr-4'
                                 />
-                                <Link to="/management">Property Management</Link>
+                                <NavLink to="/management">Property Management</NavLink>
                             </li>
 
                             <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
@@ -93,7 +93,7 @@ const Navbar = () => {
                                     size={25}
                                     className='mr-4'
                                 />
-                                <Link to="/development">Property Development</Link>
+                                <NavLink to="/development">Property Development</NavLink>
                             </li>
 
                             <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
@@ -101,7 +101,7 @@ const Navbar = () => {
                                     size={25}
                                     className='mr-4'
                                 />
-                               <Link to="/deedprocessing"> Deed Processing</Link>
+                               <NavLink to="/deedprocessing"> Deed Processing</NavLink>
                             </li>
 
                             <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
@@ -109,7 +109,7 @@ const Navbar = () => {
                                     size={25}
                                     className='mr-4'
                                 />
-                                <Link to="/designing">Building Design</Link>
+                                <NavLink to="/designing">Building Design</NavLink>
                             </li>
 
                             <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
@@ -117,7 +117,7 @@ const Navbar = () => {
                                     size={25}
                                     className='mr-4'
                                 />
-                                <Link to="/auctioning">Listings</Link>
+                                <NavLink to="/auctioning">Listings</NavLink>
                             </li>
 
                              <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
@@ -125,7 +125,7 @@ const Navbar = () => {
                                     size={25}
                                     className='mr-4'
                                 />
-                                <Link to="/appraisal">Investiment Appraisal</Link>
+                                <NavLink to="/appraisal">Investiment Appraisal</NavLink>
                             </li>
                             
                         </ul>
@@ -133,12 +133,12 @@ const Navbar = () => {
                 </div>
                 
                 <p className='hidden lg:flex font-medium hover:bg-gray-200 px-4 py-2 rounded-full hover:text-red-900 transtion-all duration-300'>
-                     <Link to='/team' >Team</Link>
+                     <NavLink to='/team' >Team</NavLink>
                 </p>
                 <button className='bg-blue-950 cursor-pointer text-white whitespace-nowrap py-2 flex items-center rounded-full hover:opacity-90 transtion-all duration-300'>
                     <BiNews className='mr-2' size={20}/>
                     
-                     <Link to='/contact' >Get Started</Link>
+                     <NavLink to='/contact' >Get Started</NavLink>
                 </button>
             </div>
 
@@ -162,11 +162,11 @@ const Navbar = () => {
                         <img src={logo} className=' p-0.5 bg-zinc-100 rounded-lg h-[80%] mr-0 bg-rd-900'/>
                          
                          <div>
-                            <h1 className='text-md px-2 whitespace-nowrap text-slate-950 font-bold'>
-                              FLEX REAL ESTATE 
+                            <h1 className='text-md px-2 whitespace-nowrap text-yellow-700 font-bold'>
+                              JMK 
                             </h1>
                             <p className='font-semibold text-[10px] ml-2'>
-                              AGENCY AND CONSULTANCY
+                              AGENCY AND CONSULTANTS
                             </p>
                          </div>
                  </div>
@@ -178,70 +178,70 @@ const Navbar = () => {
                                 size={25}
                                 className='mr-4'
                             />
-                            <Link to="/">Home</Link>
+                            <NavLink to="/">Home</NavLink>
                         </li>
                         <li className='text-xl py-4 flex hover:text-red-900 transtion-all duration-300'>
                             <RiTeamFill 
                                 size={25}
                                 className='mr-4'
                             />
-                          <Link to='/team' >Team</Link>
+                          <NavLink to='/team' >Team</NavLink>
                         </li>
                         <li className='text-xl py-4 flex hover:text-red-900 transtion-all duration-300'>
                             <RiContactsFill 
                                 size={25}
                                 className='mr-4'
                             />
-                           <Link to='/contact'>Contact</Link> 
+                           <NavLink to='/contact'>Contact</NavLink> 
                         </li>
                         <li className='text-xl py-4 flex hover:text-red-900 transtion-all duration-300'>
                             <FaBalanceScaleRight
                                 size={25}
                                 className='mr-4'
                             />
-                            <Link to="/valuation">Property Valuation</Link>
+                            <NavLink to="/valuation">Property Valuation</NavLink>
                         </li>
                         <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
                                 <AiOutlineHome
                                     size={25}
                                     className='mr-4'
                                 />
-                                <Link to="/management">Property Management</Link>
+                                <NavLink to="/management">Property Management</NavLink>
                             </li>
                         <li className='text-xl py-4 flex hover:text-red-900 transtion-all duration-300'>
                             <AiTwotoneBuild 
                                 size={25}
                                 className='mr-4'
                             />
-                             <Link to="/development">Property Development</Link>
+                             <NavLink to="/development">Property Development</NavLink>
                         </li>
                         <li className='text-xl py-4 flex hover:text-red-900 transtion-all duration-300'>
                             <FcProcess
                                 size={25}
                                 className='mr-4'
                             />
-                             <Link to="/deedprocessing">Deed Processing</Link>
+                             <NavLink to="/deedprocessing">Deed Processing</NavLink>
                         </li>
                         <li className='text-xl py-4 flex hover:text-red-900 transtion-all duration-300'>
                             <AiOutlineCodeSandbox 
                                 size={25}
                                 className='mr-4'
                             />
-                            <Link to="/designing">Building Design</Link>
+                            <NavLink to="/designing">Building Design</NavLink>
                         </li>
                         <li className='text-xl py-4 flex hover:text-red-900 transtion-all duration-300'>
                             <RiExchangeDollarLine
                                 size={25}
                                 className='mr-4'
                             />
-                            <Link to="/auctioning">Listings</Link>
+                            <NavLink to="/auctioning">Listings</NavLink>
                         </li>
                          <li className='text-lg py-4 flex items-center hover:text-red-900 transtion-all duration-300'>
                                 <FiTrendingUp
                                     size={25}
                                     className='mr-4'
                                 />
-                         <Link to="/appraisal">Investiment Appraisal</Link>
+                         <NavLink to="/appraisal">Investiment Appraisal</NavLink>
                         </li>
                     </ul>
                 </nav>

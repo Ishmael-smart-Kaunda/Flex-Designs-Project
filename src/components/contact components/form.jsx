@@ -1,9 +1,7 @@
 
 
 export default function Form(){
-        const AlertMmessage=()=>{
-                 alert("We have received your message. we'll get back soon!")
-        }
+        
 
        return(
                 <form className="w-full flex flex-col gap-4 bg-zinc-100 py-10 px-5 rounded-r-sm">
@@ -36,7 +34,7 @@ export default function Form(){
                 <option>Property Management</option>
                 <option>Property Development</option>
                 <option>Deed Processing</option>
-                <option>Building Designing</option>
+                
                 <option>Property Agency</option>
                 <option>Investiment Advisory/Appraisal</option>
             </select>
@@ -48,8 +46,8 @@ export default function Form(){
                 >
                 </textarea>
             
-                <button onClick={AlertMmessage}
-                className="w-full px-4 py-3 bg-blue-950 border-none text-white font-semibold rounded-md hover:bg-blue-950/95">Send</button>
+                <button 
+                className="w-full px-4 py-3 bg-yellow-800 border-none text-white font-semibold rounded-md hover:bg-blue-950/95">Send</button>
             
         </form>
        )

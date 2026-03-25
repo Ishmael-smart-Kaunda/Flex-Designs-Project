@@ -12,7 +12,7 @@ export default function DevProcesses({stages}){
     <div className="flex flex-col md:flex-row flex-wrap gap-4">
 
       {stages.map((stage, i) => {
-        const currentStage= visible===i
+         const currentStage= visible===i
          const StageIcon =stage.icon
         return (
         <div key={i} className="group md:max-w-fit flex flex-col md:flex-row items-center gap-3 text-slate-950">
@@ -30,6 +30,7 @@ export default function DevProcesses({stages}){
                            border-red-900
                            bg-zinc-300"
                            
+                           
                 >
                          {stage.description}
               </p> 
@@ -37,7 +38,7 @@ export default function DevProcesses({stages}){
            < MdArrowDropDown onClick={
                                      ()=>setVisible(currentStage ? null : i)} 
                                      className={`${currentStage? 
-                                     'z-10 text-red rotate-180 translat-y-[50%] transtion-all 500 md:mb-3' : 'text-grey-500'} size-6 text-grey-300 self-end`
+                                     'z-10 text-red rotate-180 translat-y-[50%] transtion-all duration-500 md:mb-3' : 'text-grey-500'}`
                                      }
                                      />
           </div>

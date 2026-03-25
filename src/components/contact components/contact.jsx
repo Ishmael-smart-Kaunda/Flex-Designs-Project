@@ -20,7 +20,7 @@ export default function ContactDetails(){
                     <article className="flex flex-col gap-10 justify-between py-10 px-5 rounded-l-sm bg-zinc-100">
                         <span>
                             
-                            <h1 className="text-blue-950 font-bold">FleX Real Estate Consutancy</h1>
+                            <h1 className="text-yellow-600 font-bold">JMK Real Estate Consutants</h1>
                             <p className="font-normal text-sm text-gray-600"> The home of execellence, compentecy and interity</p>
                             <hr className="w-1/3 text-red-900"/>
                         </span>
